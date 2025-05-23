@@ -1,0 +1,86 @@
+@use "helpers" as *;
+
+body {
+  font-family: var(--font-family-base);
+  font-size: fluid(18, 20);
+  color: var(--color-dark-blue);
+  background-color: var(--color-light);
+  line-height: 1.2;
+}
+.wrapper {
+  overflow: hidden;
+  position: relative;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  main {
+    flex-grow: 1;
+  }
+}
+
+h1, .h1, //
+h2, .h2,
+h3, .h3,
+h4, .h4,
+h5, .h5,
+h6, .h6 {
+  font-family: var(--font-family-accent);
+  font-weight: 600;
+  line-height: 1.3;
+}
+
+h1,
+.h1 {
+  font-size: fluid(40, 80);
+  margin-bottom: fluid(24, 33);
+  letter-spacing: -1.6px;
+  em {
+    color: var(--color-secondary);
+  }
+}
+h2,
+.h2 {
+  font-size: fluid(32, 56);
+}
+h3,
+.h3 {
+  font-size: fluid(24, 36);
+}
+h4,
+.h4 {
+  font-size: fluid(20, 24);
+}
+
+main {
+}
+
+a:not([class]) {
+  transition: color 0.3s ease;
+  @include hover {
+    color: var(--color-secondary);
+  }
+}
+
+p {
+  line-height: 1.5;
+}
+
+p:not([class]):not(:last-of-type) {
+  margin-bottom: rem(16);
+}
+
+.section {
+  padding-block: fluid(36, 60);
+}
+
+@include medium {
+  br {
+    display: none;
+  }
+}
+
+.container {
+  max-width: var(--container-width);
+  padding: 0 var(--container-padding-x);
+  margin: 0 auto;
+}

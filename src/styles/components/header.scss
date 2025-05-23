@@ -1,0 +1,29 @@
+@use "../helpers/" as *;
+
+.header {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding-top: fluid(16, 40);
+  &__container {
+  }
+  &__inner {
+    margin-right: auto;
+    max-width: rem(1396);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: rem(12) rem(24);
+  }
+  &__logo {
+  }
+  &__logo-img {
+    width: fluid(148, 355);
+  }
+  &__button {
+    @include small {
+      width: auto !important;
+    }
+  }
+}

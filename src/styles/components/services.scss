@@ -1,0 +1,65 @@
+@use "../helpers/" as *;
+
+.services {
+  &__header {
+    display: flex;
+    gap: fluid(24, 40) fluid(20, 50);
+    justify-content: space-between;
+    margin-bottom: fluid(24, 80);
+    @include medium {
+      flex-direction: column;
+    }
+  }
+  &__title {
+    flex: 0 1 46%;
+    @include medium {
+      flex: 0 1 100%;
+    }
+  }
+  &__text {
+    flex: 0 1 rem(824);
+    @include medium {
+      flex: 0 1 100%;
+    }
+  }
+  &__list {
+    max-width: rem(1520);
+    margin: 0 auto;
+    display: grid;
+    gap: rem(24) rem(32);
+    grid-template-columns: repeat(auto-fit, minmax(rem(300), 1fr));
+  }
+}
+
+.service {
+  display: flex;
+  column-gap: rem(24);
+
+  &__icon {
+    flex-shrink: 0;
+    width: rem(48);
+    height: rem(48);
+    background-color: var(--color-primary);
+    &_rb {
+      background-color: var(--color-secondary);
+      border-radius: 0 0 rem(120) 0;
+    }
+    &_circle {
+      border-radius: 50%;
+    }
+    &_rt {
+      background-color: var(--color-secondary);
+      border-radius: 0 rem(120) 0 0;
+    }
+  }
+  &__content {
+    h3 {
+      font-size: fluid(20, 24);
+      margin-bottom: rem(16);
+      font-family: var(--font-family-base);
+    }
+    p {
+      font-size: rem(16);
+    }
+  }
+}

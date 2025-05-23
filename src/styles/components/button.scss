@@ -1,0 +1,23 @@
+@use "../helpers/" as *;
+
+.button {
+  border-radius: rem(8);
+  background-color: var(--color-secondary);
+  color: var(--color-white);
+  padding: rem(12) rem(24);
+  font-size: fluid(16, 24);
+  transition: background-color 0.3s ease;
+  line-height: 1;
+  text-align: center;
+  display: inline-block;
+  @include x-small {
+    width: 100%;
+    
+  }
+  @include hover {
+    background-color: var(--color-primary);
+  }
+  &_dark {
+    background-color: var(--color-dark-blue);
+  }
+}

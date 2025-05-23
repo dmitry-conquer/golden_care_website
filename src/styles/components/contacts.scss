@@ -1,0 +1,49 @@
+@use "../helpers/" as *;
+
+.contacts {
+  background-position: left bottom;
+  background-repeat: no-repeat;
+  background-size: auto;
+  background-color: var(--color-dark-blue);
+  padding-block: fluid(36, 60);
+  margin-top: fluid(0, 60);
+  &__container {
+    display: flex;
+    gap: fluid(24, 40);
+    max-width: rem(1432);
+    @include medium {
+      flex-direction: column;
+    }
+  }
+  &__content {
+    color: var(--color-white) !important;
+    flex: 0 1 50%;
+    display: flex;
+    flex-direction: column;
+    row-gap: rem(24);
+    @include medium {
+      flex: 0 1 100%;
+    }
+
+    p:last-child {
+      font-size: fluid(18, 24);
+    }
+  }
+  &__form {
+    padding: fluid(24, 40);
+    border: rem(1) solid var(--color-white);
+    border-radius: rem(40);
+    background-color: var(--color-dark-blue);
+    flex: 0 1 50%;
+    @include medium {
+      flex: 0 1 100%;
+    }
+  }
+  &__form-title {
+    color: var(--color-white);
+    margin-bottom: rem(24);
+    text-align: center;
+  }
+  &__form-body {
+  }
+}
