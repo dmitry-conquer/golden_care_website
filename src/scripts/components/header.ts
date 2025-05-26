@@ -31,7 +31,15 @@ export class Header {
     this.bindEvents();
   }
 
-  onTriggerButtonClick = (): void => {
+  private onDocumentClick = (e: MouseEvent): void => {
+    const target = e.target as HTMLElement;
+    if (target.closest(this.selectors.triggerButton) || target.closest(this.selectors.overlay)) return;
+    this.triggerButtonElement?.classList.remove(this.stateClasses.isActive);
+    this.overlayElement?.classList.remove(this.stateClasses.isActive);
+    document.documentElement.classList.remove(this.stateClasses.isLock);
+  };
+
+  private onTriggerButtonClick = (): void => {
     this.triggerButtonElement?.classList.toggle(this.stateClasses.isActive);
     this.overlayElement?.classList.toggle(this.stateClasses.isActive);
     document.documentElement.classList.toggle(this.stateClasses.isLock);
@@ -39,6 +47,7 @@ export class Header {
 
   bindEvents(): void {
     this.triggerButtonElement?.addEventListener("click", this.onTriggerButtonClick);
+    document.documentElement?.addEventListener("click", this.onDocumentClick);
   }
 }
 

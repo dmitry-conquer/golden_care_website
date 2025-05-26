@@ -103,4 +103,14 @@
   &__item-content-inner {
     padding: fluid(10, 16) 0;
   }
+  &__footer {
+    max-width: rem(760);
+    margin: 0 auto;
+    margin-top: fluid(20, 40);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    row-gap: rem(16);
+    text-align: center;
+  }
 }
