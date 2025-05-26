@@ -1,0 +1,33 @@
+@use "../helpers" as *;
+
+.cards-grid {
+  &__container {
+  }
+  &__header {
+  }
+  &__top {
+  }
+  &__bottom {
+  }
+}
+
+.top-cards-grid {
+  &__info {
+  }
+  &__body {
+  }
+  &__column {
+  }
+}
+.bottom-cards-grid {
+  &__image {
+  }
+  &__content {
+  }
+  &__cta {
+  }
+  &__cta-image {
+  }
+  &__cta-content {
+  }
+}
