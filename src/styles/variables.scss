@@ -3,7 +3,7 @@
 :root {
   --color-black: #000000;
   --color-white: #ffffff;
-  --color-light: #FFF5E5;
+  --color-light: #e5f5f8;
   --color-gray: #F7F5EE;
   --color-dark-blue: #111747;
   --color-primary: #ffbc02;
@@ -12,6 +12,6 @@
   --font-family-base: "DroidSans", sans-serif;
   --font-family-accent: "Baskervville", serif;
 
-  --container-width: #{rem(1712)};
+  --container-width: #{rem(1560)};
   --container-padding-x: #{rem(16)};
 }

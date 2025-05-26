@@ -1,36 +1,35 @@
 class Sliders {
   private readonly sliders = [
     {
-      selector: "#testimonials-slider",
+      selector: "#hcservices",
       options: {
-        loop: true,
-        speed: 900,
-        slidesPerView: 3.7,
-        spaceBetween: 20,
+        speed: 1200,
+        slidesPerGroup: 3,
+        slidesPerView: 3,
+        spaceBetween: 40,
         navigation: {
-          nextEl: ".testimonials__next",
-          prevEl: ".testimonials__prev",
+          nextEl: ".hcservices__navigation-button_next",
+          prevEl: ".hcservices__navigation-button_prev",
         },
         pagination: {
-          el: ".testimonials__pagination",
+          el: ".hcservices__pagination",
           clickable: true,
         },
         breakpoints: {
           320: {
-            slidesPerView: 1,
+            slidesPerGroup: 1,
+            slidesPerView: 1.6,
             spaceBetween: 10,
           },
           768: {
-            slidesPerView: 2.5,
-            spaceBetween: 20,
+            slidesPerGroup: 1,
+            slidesPerView: 2.3,
+            spaceBetween: 40,
           },
-          1024: {
-            slidesPerView: 3.1,
-            spaceBetween: 20,
-          },
-          1200: {
-            slidesPerView: 3.7,
-            spaceBetween: 20,
+          992: {
+            slidesPerGroup: 3,
+            slidesPerView: 3,
+            spaceBetween: 40,
           },
         },
       },

@@ -1,0 +1,11 @@
+@use "../helpers" as *;
+
+.base-section {
+  &__container {
+  }
+  &__title {
+    text-align: center;
+  }
+  &__content {
+  }
+}

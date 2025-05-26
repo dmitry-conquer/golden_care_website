@@ -32,3 +32,15 @@
     background-size: contain;
   }
 }
+
+.big-title {
+  font-size: fluid(60, 200);
+  color: var(--color-light);
+  text-align: center;
+  font-weight: 700;
+  line-height: 1; /* 100% */
+}
+
+.section {
+  padding-block: fluid(40, 90);
+}

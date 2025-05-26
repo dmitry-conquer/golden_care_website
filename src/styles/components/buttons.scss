@@ -1,0 +1,21 @@
+@use "../helpers" as *;
+
+.button {
+  background-color: var(--color-primary);
+  color: var(--color-white);
+  font-size: fluid(16, 18);
+  padding: rem(14) rem(40);
+  border-radius: rem(70);
+  text-align: center;
+  white-space: nowrap;
+  font-weight: 700;
+  line-height: 1.22;
+  display: inline-block;
+  border: rem(1) solid transparent;
+  transition: all 0.3s ease;
+  @include hover {
+    background-color: var(--color-white);
+    border-color: var(--color-primary);
+    color: var(--color-primary);
+  }
+}

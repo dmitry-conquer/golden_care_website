@@ -1,0 +1,59 @@
+@use "../helpers" as *;
+
+.front-hero {
+  position: relative;
+  max-height: rem(920);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: fluid(165, 350) 0 fluid(126, 290);
+
+  &__background {
+    position: absolute;
+    left: 0;
+    top: 0;
+    z-index: -1;
+    height: 100%;
+    width: 100%;
+    overflow: hidden;
+    border-radius: 0px 0px 5000px 5000px;
+    &::after {
+      content: "";
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      top: 0;
+      left: 0;
+      background:
+        linear-gradient(0, rgba(1, 127, 146, 0.6) 13.74%, rgba(72, 196, 230, 0) 77.85%),
+        linear-gradient(0, rgba(255, 255, 255, 0) 75.3%, #fff 100%);
+    }
+  }
+  &__video {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  &__container {
+    padding: 0 rem(20);
+  }
+  &__content {
+    max-width: rem(861);
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    row-gap: rem(16);
+    text-align: center;
+    h1 {
+      color: var(--color-white);
+      text-shadow: 0px 3px 2px rgba(14, 14, 14, 0.2);
+    }
+    p {
+      color: var(--color-white);
+      text-shadow: 0px 2px 2px rgba(0, 0, 0, 0.15);
+      font-size: fluid(16, 40);
+      line-height: 1.3;
+    }
+  }
+}
