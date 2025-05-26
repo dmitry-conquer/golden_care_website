@@ -1,0 +1,106 @@
+@use "../helpers" as *;
+
+.faq {
+  &__container {
+  }
+  &__title {
+    margin-bottom: fluid(20, 40);
+    text-align: center;
+  }
+  &__list {
+    max-width: rem(1006);
+    margin: 0 auto;
+  }
+  &__item {
+    border: rem(1) solid var(--color-border);
+    border-radius: rem(16);
+    overflow: hidden;
+    @include x-small {
+      border-radius: rem(4);
+    }
+
+    &:not(:last-child) {
+      margin-bottom: rem(-1);
+    }
+  }
+  &__item-header {
+    padding: rem(16) fluid(16, 60);
+    width: 100%;
+    text-align: left;
+    color: var(--color-secondary);
+    font-size: fluid(18, 20);
+    font-weight: 700;
+    line-height: 1.2;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    column-gap: rem(20);
+
+    &.is-active {
+      background-color: var(--color-secondary);
+      color: var(--color-white);
+      .faq__cross {
+        background-color: transparent;
+        span {
+          background-color: var(--color-primary);
+          &:nth-child(1) {
+            opacity: 0;
+          }
+        }
+      }
+      & + .faq__item-content {
+        background-color: var(--color-secondary);
+        .faq__item-content-inner {
+          border-top: rem(1) solid var(--color-border);
+        }
+        p {
+          color: var(--color-white) !important;
+        }
+      }
+    }
+    @include hover {
+      &:not(.is-active) {
+        background-color: var(--color-light);
+        .faq__cross {
+          background-color: var(--color-primary);
+          span {
+            background-color: var(--color-white);
+          }
+        }
+      }
+    }
+  }
+  &__cross {
+    flex-shrink: 0;
+    width: fluid(32, 40);
+    height: fluid(32, 40);
+    border-radius: 50%;
+    background-color: transparent;
+    transition: all 0.3s ease;
+    position: relative;
+    span {
+      transition: all 0.3s ease;
+      position: absolute;
+      display: block;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      background-color: var(--color-primary);
+      width: fluid(16, 24);
+      height: rem(2);
+      &:first-child {
+        width: rem(2);
+        height: fluid(16, 24);
+      }
+    }
+  }
+  &__item-content {
+    overflow: hidden;
+    max-height: 0;
+    transition: max-height 0.4s ease;
+    padding: 0 fluid(16, 60);
+  }
+  &__item-content-inner {
+    padding: fluid(10, 16) 0;
+  }
+}

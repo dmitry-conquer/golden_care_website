@@ -3,8 +3,9 @@
 body {
   font-family: var(--font-family-base);
   font-size: fluid(18, 20);
-  color: var(--color-dark-blue);
+  color: var(--color-secondary);
   line-height: 1.2;
+  letter-spacing: -0.3px;
 }
 .wrapper {
   overflow: hidden;

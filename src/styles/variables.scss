@@ -3,15 +3,16 @@
 :root {
   --color-black: #000000;
   --color-white: #ffffff;
-  --color-light: #e5f5f8;
-  --color-gray: #F7F5EE;
+  --color-light: #f2fafb;
+  --color-gray: #f7f5ee;
   --color-dark-blue: #111747;
   --color-primary: #ffbc02;
   --color-secondary: #009fb7;
+  --color-border: #c2e8ed;
 
   --font-family-base: "DroidSans", sans-serif;
   --font-family-accent: "Baskervville", serif;
 
-  --container-width: #{rem(1560)};
+  --container-width: #{rem(1556)};
   --container-padding-x: #{rem(16)};
 }
