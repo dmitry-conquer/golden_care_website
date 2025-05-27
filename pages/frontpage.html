@@ -6,7 +6,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/8.4.7/swiper-bundle.min.css" />
     <title>Front page</title>
   </head>
-  <body >
+  <body>
     <div class="wrapper">
       {{> header}}
       <main>
@@ -22,7 +22,6 @@
               poster="/images/hero.webp"
             ></video>
           </div>
-
           <div class="front-hero__container">
             <div class="front-hero__content">
               <h1>Golden Care</h1>
@@ -32,10 +31,24 @@
           </div>
         </section>
 
+        <section class="under-front-hero base-section">
+          <div class="base-section__container container">
+            <h2 class="base-section__title sr-only">About Golden Care</h2>
+            <div class="base-section__content">
+              <p>
+                Golden Care is a trusted home care agency in Naples, FL, providing compassionate non-medical support for
+                seniors. We help clients live safely and comfortably at home with personalized care tailored to their
+                needs. Our reliable caregivers enhance daily life while promoting independence, dignity, and peace of
+                mind — always with the gold standard of quality.
+              </p>
+            </div>
+          </div>
+        </section>
+
         <section class="rows section">
           <div class="rows__container container">
             <div class="rows__item row">
-              <div class="row__content">
+              <div data-aos="fade-up" data-aos-delay="50" class="row__content">
                 <h2>
                   <strong>Who We Are –</strong> <br />
                   <span style="font-weight: 400">The Golden Care</span>
@@ -50,7 +63,7 @@
                   well-being first, every step of the way.
                 </p>
               </div>
-              <div class="row__image">
+              <div data-aos="fade-up" data-aos-delay="100" class="row__image">
                 <a
                   href="https://www.youtube.com/watch?v=NpEaa2P7qZI"
                   class="row__play-button play-button video-lightbox"
@@ -59,7 +72,7 @@
               </div>
             </div>
             <div class="rows__item row row_reverse">
-              <div class="row__content">
+              <div data-aos="fade-up" data-aos-delay="50" class="row__content">
                 <h3>What makes Golden Care stand out?</h3>
                 <p>
                   We combine a concierge-level of service with a personal touch. Our approach to care is holistic,
@@ -72,7 +85,7 @@
                   <li><strong>Learm More About Golden Care</strong></li>
                 </ul>
               </div>
-              <div class="row__image">
+              <div data-aos="fade-up" data-aos-delay="100" class="row__image">
                 <img src="/images/front2.webp" alt="#" loading="lazy" />
               </div>
             </div>
@@ -83,14 +96,14 @@
           <img src="/images/svg/dec.svg" alt="" class="features__background" />
           <div class="features__container container">
             <div class="features__header">
-              <h2 class="features__title big-title">Why Choose Us</h2>
-              <p>
+              <h2 data-aos="fade-up" class="features__title big-title">Why Choose Us</h2>
+              <p data-aos="fade-up" data-aos-delay="50">
                 Families trust Golden Care because we take action, stay involved, and <br />
                 truly care. Here’s how our home care agency in Naples stands out:
               </p>
             </div>
             <div class="features__items">
-              <div class="features__item feature">
+              <div data-aos="fade-up" data-aos-delay="50" class="features__item feature">
                 <div class="feature__icon-wrapper">
                   <img src="/images/svg/f1.svg" class="feature__icon" alt="" loading="lazy" />
                 </div>
@@ -101,7 +114,7 @@
                   </p>
                 </div>
               </div>
-              <div class="features__item feature">
+              <div data-aos="fade-up" data-aos-delay="100" class="features__item feature">
                 <div class="feature__icon-wrapper">
                   <img src="/images/svg/f1.svg" class="feature__icon" alt="" loading="lazy" />
                 </div>
@@ -112,7 +125,7 @@
                   </p>
                 </div>
               </div>
-              <div class="features__item feature">
+              <div data-aos="fade-up" data-aos-delay="150" class="features__item feature">
                 <div class="feature__icon-wrapper">
                   <img src="/images/svg/f1.svg" class="feature__icon" alt="" loading="lazy" />
                 </div>
@@ -123,7 +136,7 @@
                   </p>
                 </div>
               </div>
-              <div class="features__item feature">
+              <div data-aos="fade-up" data-aos-delay="100" class="features__item feature">
                 <div class="feature__icon-wrapper">
                   <img src="/images/svg/f1.svg" class="feature__icon" alt="" loading="lazy" />
                 </div>
@@ -134,7 +147,7 @@
                   </p>
                 </div>
               </div>
-              <div class="features__item feature">
+              <div data-aos="fade-up" data-aos-delay="50" class="features__item feature">
                 <div class="feature__icon-wrapper">
                   <img src="/images/svg/f1.svg" class="feature__icon" alt="" loading="lazy" />
                 </div>
@@ -149,16 +162,17 @@
           </div>
         </section>
 
-        <section class="base-section section">
-          <div class="base-section__container container">
-            <h2 class="base-section__title">Reviews</h2>
-            <div class="base-section__content">GOOGLE REVIEW</div>
+        <section class="testimonials section">
+          <img src="/images/review-image.webp" alt="" class="testimonials__background" loading="lazy" />
+          <div class="testimonials__container container">
+            <h2 class="testimonials__title" data-aos="fade-up">Reviews</h2>
+            <div class="testimonials__content" data-aos="fade-up">GOOGLE REVIEW</div>
           </div>
         </section>
 
         <section class="hcservices section">
           <div class="hcservices__container container">
-            <div class="hcservices__header">
+            <div data-aos="fade-up" class="hcservices__header">
               <h2>Our Home <span style="font-weight: 400">Care Services</span></h2>
               <p>
                 We offer a wide range of home care services in Naples and surrounding areas, designed to support seniors
@@ -166,7 +180,7 @@
                 round-the-clock assistance, our flexible care plans have you covered. Golden Care’s services include:
               </p>
             </div>
-            <div class="hcservices__body">
+            <div class="hcservices__body" data-aos="fade-up">
               <div class="hcservices__navigation">
                 <button type="button" class="hcservices__navigation-button hcservices__navigation-button_prev"></button>
                 <button type="button" class="hcservices__navigation-button hcservices__navigation-button_next"></button>
@@ -240,7 +254,7 @@
 
         <section class="cards-grid section">
           <div class="cards-grid__container container">
-            <div class="cards-grid__header">
+            <div data-aos="fade-up" class="cards-grid__header">
               <h2>Paying for <span style="font-weight: 400">In-Home Care</span></h2>
               <p>
                 At Golden Care, we understand that figuring out how to pay for care can feel <br />
@@ -249,7 +263,7 @@
               </p>
             </div>
             <div class="cards-grid__top top-cards-grid">
-              <div class="top-cards-grid__info">
+              <div class="top-cards-grid__info" data-aos="fade-up">
                 <h3>Private Pay</h3>
                 <p>
                   Many families choose to pay for services directly through private pay. This option offers the most
@@ -258,7 +272,7 @@
                   to create a personalized care plan that fits both your needs and your budget.
                 </p>
               </div>
-              <div class="top-cards-grid__body">
+              <div class="top-cards-grid__body" data-aos="fade-up" data-aos-delay="150">
                 <div class="top-cards-grid__column">
                   <h3 class="h4">
                     Long-Term Care <br />
@@ -285,8 +299,15 @@
               </div>
             </div>
             <div class="cards-grid__bottom bottom-cards-grid">
-              <img src="/images/front3.webp" alt="" class="bottom-cards-grid__image" loading="lazy" />
-              <div class="bottom-cards-grid__content">
+              <img
+                src="/images/front3.webp"
+                alt=""
+                class="bottom-cards-grid__image"
+                loading="lazy"
+                data-aos="fade-up"
+                data-aos-delay="50"
+              />
+              <div class="bottom-cards-grid__content" data-aos="fade-up" data-aos-delay="200">
                 <h3 class="h4">Veterans Benefits</h3>
                 <p>
                   For those who have served, we proudly help veterans and their spouses take advantage of available
@@ -299,11 +320,11 @@
                   <li>Coordinating care in line with benefit requirements</li>
                 </ul>
               </div>
-              <div class="bottom-cards-grid__cta">
+              <div class="bottom-cards-grid__cta" data-aos="fade-up" data-aos-delay="100">
                 <img src="/images/front4.webp" alt="" class="bottom-cards-grid__cta-image" loading="lazy" />
                 <div class="bottom-cards-grid__cta-content">
                   <h3 class="h4">Let’s take the stress out of financing care.</h3>
-                  <a href="#" class="button">Contact Us Today</a>
+                  <a href="#" class="button button_md">Contact Us Today</a>
                 </div>
               </div>
             </div>
@@ -312,10 +333,10 @@
 
         <section class="serve-areas section">
           <div class="serve-areas__container container">
-            <div class="serve-areas__header">
+            <div data-aos="fade-up" class="serve-areas__header">
               <h2>
                 Areas <br />
-                <span style="flex-direction: 400">We Serve</span>
+                <span style="font-weight: 400">We Serve</span>
               </h2>
               <p>
                 Golden Care proudly provides compassionate home care to seniors and families throughout Southwest
@@ -323,35 +344,35 @@
               </p>
             </div>
             <div class="serve-areas__list">
-              <div class="serve-areas__item">
+              <div class="serve-areas__item" data-aos="fade-up" data-aos-delay="100">
                 <p><strong>North Naples</strong></p>
               </div>
-              <div class="serve-areas__item">
+              <div class="serve-areas__item" data-aos="fade-up" data-aos-delay="100">
                 <p><strong>North Naples</strong></p>
               </div>
-              <div class="serve-areas__item">
+              <div class="serve-areas__item" data-aos="fade-up" data-aos-delay="100">
                 <p><strong>North Naples</strong></p>
               </div>
-              <div class="serve-areas__item">
+              <div class="serve-areas__item" data-aos="fade-up" data-aos-delay="100">
                 <p><strong>North Naples</strong></p>
               </div>
-              <div class="serve-areas__item">
+              <div class="serve-areas__item" data-aos="fade-up" data-aos-delay="100">
                 <p><strong>North Naples</strong></p>
               </div>
-              <div class="serve-areas__item">
+              <div class="serve-areas__item" data-aos="fade-up" data-aos-delay="100">
                 <p><strong>North Naples</strong></p>
               </div>
-              <div class="serve-areas__item">
+              <div class="serve-areas__item" data-aos="fade-up" data-aos-delay="100">
                 <p><strong>North Naples</strong></p>
               </div>
-              <div class="serve-areas__item">
+              <div class="serve-areas__item" data-aos="fade-up" data-aos-delay="100">
                 <p><strong>North Naples</strong></p>
               </div>
-              <div class="serve-areas__item">
+              <div class="serve-areas__item" data-aos="fade-up" data-aos-delay="100">
                 <p><strong>Collier County</strong></p>
                 and surrounding communities
               </div>
-              <div class="serve-areas__item">
+              <div class="serve-areas__item" data-aos="fade-up" data-aos-delay="100">
                 <p><strong>Lee County</strong></p>
                 (Cape Coral, Lehigh Acres, and Fort Myers)
               </div>
@@ -359,11 +380,63 @@
           </div>
         </section>
 
+        <section class="rows rows_yellow section">
+          <div class="rows__container container">
+            <div class="rows__item row row_reverse">
+              <div class="row__content" data-aos="fade-up" data-aos-delay="100">
+                <h2>
+                  Careers at Golden Care<br />
+                  <span style="font-weight: 400">– Join Our Team</span>
+                </h2>
+                <p>
+                  Calling all caring hearts! If you are a compassionate individual who finds joy in helping others,
+                  consider a fulfilling career with Golden Care. We are a locally owned agency that values our employees
+                  as our most important asset. As a Golden Care caregiver, you will make a difference in someone’s life
+                  every time you go to work. We take pride in creating a supportive, rewarding work environment for our
+                  team.
+                </p>
+                <ul>
+                  <li><strong>Explore More</strong></li>
+                </ul>
+              </div>
+              <div class="row__image" data-aos="fade-up" data-aos-delay="50">
+                <img src="/images/front5.webp" alt="#" loading="lazy" />
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section class="cta section">
+          <div class="cta__container container">
+            <div class="cta__content">
+              <h2 class="h3" data-aos="fade-up">Why work at Golden Care?</h2>
+              <p data-aos="fade-up">
+                Join the Golden Care family and enjoy competitive pay, bonuses, and support from a respectful,
+                compassionate team. As a W-2 employee, we handle liability insurance, workers’ comp, and payroll
+                taxes—offering you stability and peace of mind. We offer flexible schedules (full-time or part-time),
+                ongoing training, and growth opportunities in the home care field. Most importantly, you’ll build
+                meaningful one-on-one relationships and make a real impact in our community.
+              </p>
+              <a href="#" data-aos="fade-up" class="button button_lg">Apply Today!</a>
+            </div>
+            <div class="cta__bottom" data-aos="fade-up">
+              <img src="/images/svg/flowers.svg" alt="#" loading="lazy" />
+            </div>
+          </div>
+        </section>
+
         <section class="faq section" data-js-accordion itemscope itemtype="https://schema.org/FAQPage">
           <div class="faq__container container">
-            <h2 class="faq__title">Frequently Asked Questions</h2>
+            <h2 data-aos="fade-up" class="faq__title">Frequently Asked Questions</h2>
             <div class="faq__list">
-              <div class="faq__item" itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
+              <div
+                data-aos="fade-up"
+                data-aos-delay="150"
+                class="faq__item"
+                itemscope
+                itemprop="mainEntity"
+                itemtype="https://schema.org/Question"
+              >
                 <button
                   class="faq__item-header"
                   id="faq-button-1"
@@ -396,7 +469,14 @@
                   </div>
                 </div>
               </div>
-              <div class="faq__item" itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
+              <div
+                data-aos="fade-up"
+                data-aos-delay="150"
+                class="faq__item"
+                itemscope
+                itemprop="mainEntity"
+                itemtype="https://schema.org/Question"
+              >
                 <button
                   class="faq__item-header"
                   id="faq-button-2"
@@ -429,7 +509,14 @@
                   </div>
                 </div>
               </div>
-              <div class="faq__item" itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
+              <div
+                data-aos="fade-up"
+                data-aos-delay="150"
+                class="faq__item"
+                itemscope
+                itemprop="mainEntity"
+                itemtype="https://schema.org/Question"
+              >
                 <button
                   class="faq__item-header"
                   id="faq-button-1"
@@ -462,7 +549,14 @@
                   </div>
                 </div>
               </div>
-              <div class="faq__item" itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
+              <div
+                data-aos="fade-up"
+                data-aos-delay="150"
+                class="faq__item"
+                itemscope
+                itemprop="mainEntity"
+                itemtype="https://schema.org/Question"
+              >
                 <button
                   class="faq__item-header"
                   id="faq-button-2"
@@ -495,7 +589,14 @@
                   </div>
                 </div>
               </div>
-              <div class="faq__item" itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
+              <div
+                data-aos="fade-up"
+                data-aos-delay="150"
+                class="faq__item"
+                itemscope
+                itemprop="mainEntity"
+                itemtype="https://schema.org/Question"
+              >
                 <button
                   class="faq__item-header"
                   id="faq-button-1"
@@ -528,7 +629,14 @@
                   </div>
                 </div>
               </div>
-              <div class="faq__item" itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
+              <div
+                data-aos="fade-up"
+                data-aos-delay="150"
+                class="faq__item"
+                itemscope
+                itemprop="mainEntity"
+                itemtype="https://schema.org/Question"
+              >
                 <button
                   class="faq__item-header"
                   id="faq-button-2"
@@ -562,14 +670,14 @@
                 </div>
               </div>
             </div>
-            <div class="faq__footer">
+            <div data-aos="fade-up" class="faq__footer">
               <h3 class="h4">Have more questions or ready to get started?</h3>
               <p>
                 We’re here to help. Contact Golden Care anytime for more information or to schedule your free in-home
                 consultation. Let us show you why families across Naples and Southwest Florida trust us as their #1
                 choice for home care.
               </p>
-              <a href="#" class="button">Start Today!</a>
+              <a href="#" class="button button_lg">Start Today!</a>
             </div>
           </div>
         </section>

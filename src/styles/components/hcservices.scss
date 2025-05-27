@@ -1,6 +1,7 @@
 @use "../helpers" as *;
 
 .hcservices {
+  margin: fluid(40, 90) 0;
   &__container {
     @include medium {
       padding-right: 0;

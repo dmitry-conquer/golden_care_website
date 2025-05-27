@@ -3,6 +3,12 @@
 .header {
   --header-height: #{rem(125)};
 
+  position: absolute;
+  z-index: 9999;
+  top: 0;
+  left: 0;
+  width: 100%;
+
   @include small {
     --header-height: #{rem(90)};
   }
@@ -191,7 +197,7 @@
   &__contact {
     h2 {
       color: var(--color-white);
-      font-size: rem(16);
+      font-size: rem(20);
       font-weight: 700;
       line-height: 1.37;
       margin-bottom: rem(8);

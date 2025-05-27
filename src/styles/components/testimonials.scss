@@ -1,0 +1,25 @@
+@use "../helpers" as *;
+
+.testimonials {
+  position: relative;
+  &__background {
+    pointer-events: none;
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    width: rem(1117);
+    height: rem(1149);
+    object-fit: contain;
+    @include large {
+      display: none;
+    }
+  }
+  &__container {
+  }
+  &__title {
+    text-align: center;
+  }
+  &__content {
+  }
+}

@@ -69,7 +69,7 @@
       flex: 0 1 100%;
     }
     &:nth-child(1) {
-      flex: 0 1 rem(430);
+      flex: 0 1 rem(410);
       @include medium {
         flex-direction: column;
         flex: 0 1 100%;
@@ -133,7 +133,7 @@
     }
     h3 {
       color: var(--color-white);
-      margin-bottom: fluid(8, 16);
+      margin-bottom: 0;
       font-weight: 700;
       line-height: 1;
     }

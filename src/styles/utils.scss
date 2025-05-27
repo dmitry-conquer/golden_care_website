@@ -44,3 +44,18 @@
 .section {
   padding-block: fluid(40, 90);
 }
+
+.above-footer-title {
+  display: block;
+  margin-bottom: fluid(20, 40);
+}
+
+.under-front-hero {
+  padding-bottom: fluid(40, 80);
+  p {
+    text-align: center;
+  }
+  @include above-small {
+    display: none;
+  }
+}

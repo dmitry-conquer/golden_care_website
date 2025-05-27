@@ -1,6 +1,7 @@
 @use "../helpers" as *;
 
 .faq {
+  margin-bottom: fluid(40, 90);
   &__container {
   }
   &__title {

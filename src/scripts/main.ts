@@ -4,6 +4,7 @@ import BackTopButton from "./components/back-top-button";
 import GLightbox from "glightbox";
 import AccordionCollection from "./components/accordion";
 import Header from "./components/header";
+//@ts-expect-error missing types
 import { useDynamicAdapt } from "./dynamicAdapt";
 import "../styles/main.scss";
 import "glightbox/dist/css/glightbox.min.css";

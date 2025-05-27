@@ -1,6 +1,7 @@
 @use "../helpers" as *;
 
 .serve-areas {
+  margin: fluid(40, 90) 0;
   &__container {
     display: flex;
     gap: fluid(24, 40);
