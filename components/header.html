@@ -1,9 +1,10 @@
 <header class="header" data-js-header id="top">
   <div class="header__container container">
-    <a href="/" class="header__logo-wrapper">
+    <a href="/" class="header__logo-wrapper" aria-label="Home">
       <img src="/images/logo.webp" alt="Logo" class="header__logo" />
+      <img src="/images/logo-white.webp" alt="Logo" class="header__logo header__logo_mobile" />
     </a>
-    <nav class="header__nav">
+    <nav class="header__nav" role="navigation" aria-label="Main navigation">
       <ul class="header__nav-list">
         <li class="header__nav-item">
           <a href="#" class="header__nav-link">About Us</a>
@@ -23,7 +24,7 @@
       </ul>
     </nav>
     <div class="header__actions">
-      <a href="tel:1111" class="header__phone">(239) 440-2900</a>
+      <a href="tel:1111" class="header__phone" aria-label="Call us">(239) 440-2900</a>
       <a href="#" class="header__link button">Contact Us</a>
     </div>
 
@@ -45,9 +46,10 @@
       id="header-overlay"
       class="header__overlay header-overlay"
       aria-labelledby="menu-toggle"
+      style="background-image: url(&quot;/images/header-bg.webp&quot;)"
       data-js-header-overlay
     >
-      <nav class="header-overlay__nav">
+      <nav class="header-overlay__nav" role="navigation" aria-label="Mobile navigation">
         <ul class="header-overlay__nav-list">
           <li class="header-overlay__nav-item">
             <a href="#" class="header-overlay__nav-link">About Us</a>

@@ -2,9 +2,22 @@
 
 .header {
   --header-height: #{rem(125)};
+
   @include small {
-    --header-height: #{rem(80)};
+    --header-height: #{rem(90)};
   }
+
+  @include x-small {
+    &.is-active {
+      .header__logo {
+        display: none;
+        &_mobile {
+          display: block;
+        }
+      }
+    }
+  }
+
   &__container {
     display: flex;
     align-items: center;
@@ -15,12 +28,16 @@
   }
   &__logo-wrapper {
     max-width: fluid(120, 262);
+    z-index: 1000;
     height: rem(78);
   }
   &__logo {
     width: 100%;
     height: 100%;
     object-fit: contain;
+    &_mobile {
+      display: none;
+    }
   }
 
   &__nav-list {
@@ -125,8 +142,11 @@
   right: -100%;
   transition: all 0.3s ease;
   background-color: var(--color-secondary);
-  padding: calc(var(--header-height) - rem(10)) rem(24) rem(24) rem(24);
+  padding: calc(var(--header-height)) rem(24) rem(24) rem(24);
   display: none;
+  background-position: bottom center;
+  background-repeat: no-repeat;
+  background-size: cover;
 
   @include x-small {
     max-width: 100%;
@@ -141,6 +161,7 @@
   }
 
   &__nav {
+    padding-top: rem(20);
   }
   &__nav-list {
     display: flex;
