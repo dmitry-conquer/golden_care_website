@@ -4,6 +4,7 @@ import BackTopButton from "./components/back-top-button";
 import GLightbox from "glightbox";
 import AccordionCollection from "./components/accordion";
 import Header from "./components/header";
+import { useDynamicAdapt } from "./dynamicAdapt";
 import "../styles/main.scss";
 import "glightbox/dist/css/glightbox.min.css";
 
@@ -12,6 +13,7 @@ document.addEventListener("DOMContentLoaded", () => {
   new BackTopButton(900, "top");
   new AccordionCollection();
   new Header();
+  useDynamicAdapt();
 
   GLightbox({
     selector: ".video-lightbox",
