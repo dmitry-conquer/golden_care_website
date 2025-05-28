@@ -35,7 +35,8 @@
       min-height: unset;
     }
     @include small {
-      grid-template-columns: 1fr;
+      display: flex;
+      flex-direction: column;
     }
   }
   &__item {

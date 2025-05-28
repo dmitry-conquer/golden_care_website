@@ -39,12 +39,11 @@
     margin: 0 auto;
     text-align: center !important;
 
-    a {
-      align-self: center;
-    }
-    
     @include medium {
       text-align: left !important;
+      p:has(a.button) {
+        align-self: center;
+      }
     }
   }
   &__bottom {
