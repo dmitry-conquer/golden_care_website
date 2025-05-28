@@ -36,8 +36,16 @@
     border-radius: rem(16);
     border: rem(1) solid var(--color-border);
     background: var(--color-light);
-    padding: rem(22);
+    padding: rem(13) rem(22);
+    min-height: fluid(60, 80);
     text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    p {
+      margin-bottom: 0 !important;
+    }
     @include small {
       border-radius: 0;
     }
