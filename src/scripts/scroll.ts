@@ -18,12 +18,39 @@ export default class Scroll {
       autoRaf: true,
       anchors: true,
     });
+    this.bubbleScrollAtEdge();
   }
 
   public initAOS() {
     AOS.init({
       duration: 1000,
       once: true,
+    });
+  }
+
+  public bubbleScrollAtEdge() {
+    const scrolledElements = document.querySelectorAll("[data-lenis-prevent]") as NodeListOf<HTMLElement>;
+    scrolledElements.forEach((element: HTMLElement) => {
+      element?.addEventListener(
+        "wheel",
+        (e: WheelEvent) => {
+          const scrollTop = element.scrollTop;
+          const scrollHeight = element.scrollHeight;
+          const offsetHeight = element.offsetHeight;
+          const delta = e.deltaY;
+
+          if (scrollTop + offsetHeight >= scrollHeight && delta > 0) {
+            e.preventDefault();
+            window.dispatchEvent(new WheelEvent("wheel", { deltaY: delta }));
+          }
+
+          if (scrollTop <= 0 && delta < 0) {
+            e.preventDefault();
+            window.dispatchEvent(new WheelEvent("wheel", { deltaY: delta }));
+          }
+        },
+        { passive: false }
+      );
     });
   }
 }

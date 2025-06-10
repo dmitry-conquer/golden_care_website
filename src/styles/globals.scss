@@ -110,7 +110,7 @@ p:not([class]):not(:last-of-type) {
 
 @include medium {
   br {
-    display: none;
+    display: none !important;
   }
 }
 
