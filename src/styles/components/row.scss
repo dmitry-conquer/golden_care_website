@@ -4,29 +4,88 @@
   &_yellow {
     background-color: var(--color-primary-light);
   }
-}
-.row {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  gap: rem(24) rem(40);
-  @include medium {
-    flex-direction: column-reverse;
-  }
-  &_reverse {
-    flex-direction: row-reverse;
-    @include medium {
-      flex-direction: column-reverse;
+  &_icons-list {
+    .row__content {
+      ul {
+        li {
+          list-style-type: none;
+          display: flex;
+          align-items: center;
+          column-gap: rem(8);
+
+          &:not(:last-child) {
+            margin-bottom: rem(8);
+          }
+
+          img {
+            width: fluid(20, 24);
+            height: fluid(20, 24);
+            object-fit: contain;
+            flex-shrink: 0;
+          }
+          span {
+          }
+        }
+      }
     }
   }
+}
+.row {
   &:not(:last-child) {
-    margin-bottom: fluid(40, 120);
+    margin-bottom: fluid(80, 120);
   }
+
+  &__inner {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: rem(24) rem(40);
+    @include medium {
+      flex-direction: column;
+    }
+
+    &_reverse {
+      flex-direction: row-reverse;
+      @include medium {
+        flex-direction: column;
+      }
+    }
+    &_reduce-image {
+      .row__image {
+        flex: 0 1 rem(640);
+        @include medium {
+          flex: 0 1 100%;
+        }
+      }
+    }
+    &_hero {
+      @include medium {
+        flex-direction: column;
+      }
+      .row__content {
+        @include medium {
+          align-items: center;
+          text-align: center !important;
+          h2,
+          h3 {
+            text-align: center;
+          }
+        }
+      }
+    }
+  }
+
+  &__title {
+    text-align: center;
+    margin-bottom: fluid(24, 80);
+  }
+
   &__content {
     display: flex;
     flex-direction: column;
+    align-items: flex-start;
     row-gap: rem(16);
-    flex: 0 1 rem(600);
+    flex: 0 1 rem(640);
     @include medium {
       flex: 0 1 100%;
     }
@@ -35,12 +94,24 @@
       list-style-position: inside;
       color: var(--color-secondary);
     }
+    p {
+      margin-bottom: 0 !important;
+    }
+    h3 {
+      font-size: fluid(28, 40);
+      font-weight: 500;
+    }
   }
+
   &__image {
     position: relative;
     flex: 0 1 rem(740);
     @include medium {
       flex: 0 1 100%;
+    }
+
+    img {
+      width: 100%;
     }
   }
 }

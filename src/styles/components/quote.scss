@@ -1,0 +1,57 @@
+@use "../helpers" as *;
+
+.quote {
+  &__container {
+  }
+
+  &__body {
+    max-width: rem(980);
+    margin: 0 auto;
+    padding: fluid(24, 60) fluid(24, 40);
+    border-radius: rem(30);
+    border: 1px solid var(--color-primary);
+    position: relative;
+    &::after,
+    &::before {
+      content: "";
+      position: absolute;
+      background-image: url("data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%2060%2046%22%20fill%3D%22none%22%3E%3Cpath%20d%3D%22M14.28%2045.2783C6.6%2045.2783%20-3.8147e-06%2039.835%20-3.8147e-06%2028.0824C-3.8147e-06%2011.567%2013.08%201.85564%2020.52%200.865948L22.08%205.44327C17.76%208.35049%2014.22%2013.3608%2014.58%2016.268C19.44%2016.6391%2027.3%2019.2989%2027.3%2030.1855C27.36%2038.4123%2022.86%2045.2783%2014.28%2045.2783ZM46.86%2045.2783C39.18%2045.2783%2032.58%2039.835%2032.58%2028.0824C32.58%2011.567%2045.66%201.85564%2053.1%200.865948L54.66%205.44327C50.4%208.35049%2046.86%2013.2989%2047.28%2016.268C52.08%2016.6391%2060%2019.2989%2060%2030.1855C60%2038.4123%2055.44%2045.2783%2046.86%2045.2783Z%22%20fill%3D%22%23FFBC02%22%2F%3E%3C%2Fsvg%3E");
+      background-position: center;
+      background-size: contain;
+      background-repeat: no-repeat;
+      width: fluid(24, 60);
+      height: fluid(17, 44);
+      transform: translateY(-50%);
+    }
+
+    &::after {
+      top: 0;
+      left: rem(24);
+    }
+    &::before {
+      bottom: 0;
+      right: rem(24);
+      transform: translateY(50%) rotate(180deg);
+    }
+  }
+
+  &__inner {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    p {
+      color: var(--color-secondary);
+      text-align: center;
+      font-size: fluid(18, 50);
+      font-weight: 700;
+      line-height: 1.1;
+      letter-spacing: -1px;
+      margin-bottom: rem(16);
+    }
+
+    footer {
+      font-size: fluid(16, 28);
+      font-weight: 700;
+    }
+  }
+}

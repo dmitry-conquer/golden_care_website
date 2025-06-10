@@ -53,6 +53,9 @@ body {
   flex-direction: column;
   main {
     flex-grow: 1;
+    &.base-page {
+      padding-top: fluid(80, 120);
+    }
   }
 }
 
