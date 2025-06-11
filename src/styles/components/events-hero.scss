@@ -1,0 +1,36 @@
+@use "../helpers" as *;
+
+.events-hero {
+  &__content {
+    text-align: center;
+    margin-bottom: fluid(40, 100);
+
+    h1 {
+      margin-bottom: rem(16);
+    }
+    h2 {
+      font-size: fluid(28, 40);
+      font-weight: 400;
+      line-height: 1.12;
+      letter-spacing: -0.8px;
+      margin-bottom: fluid(16, 24);
+    }
+  }
+
+  &__image-wrapper {
+    display: flex;
+    justify-content: center;
+  }
+
+  &__image {
+    @include small {
+      display: none;
+    }
+  }
+
+  &__image-mobile {
+    @include above-small {
+      display: none;
+    }
+  }
+}

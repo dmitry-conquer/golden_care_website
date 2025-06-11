@@ -1,0 +1,146 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Events</title>
+  </head>
+  <body>
+    <div class="wrapper">
+      {{> header}}
+      <main class="base-page" style="background-image: url(&quot;/images/base-page-bg.svg&quot;)">
+        <section class="events-hero section">
+          <div class="events-hero__container container">
+            <div class="events-hero__content">
+              <h1 class="h2">Complimentary Educational Presentation</h1>
+              <h2>Understanding Your Long Term Care Insurance Benefits</h2>
+              <p>
+                Meet with area advocates on understanding the ins and outs of your long-term care <br />
+                insurance benefits. When is the right time to open a claim, how do you start the process, <br />
+                what does my policy cover? These are all very common questions. Bring your questions and <br />
+                policy for this interactive seminar to take advantage of your benefits.
+              </p>
+            </div>
+            <div class="events-hero__image-wrapper">
+              <img src="/images/events-hero.png" alt="" class="events-hero__image" />
+              <img src="/images/events-hero-mob.png" alt="" class="events-hero__image-mobile" />
+            </div>
+          </div>
+        </section>
+
+        <section class="events section">
+          <div class="events__container container">
+            <div class="events__has-events">
+              <div class="event__header">
+                <h2 class="events__title">RSVP Today to one of these great events!</h2>
+              </div>
+              <div class="events__list">
+                <div class="events__item event">
+                  <a href="#" class="event__inner">
+                    <div class="event__image-wrapper">
+                      <img src="/images/blog.png" alt="" class="event__image" />
+                    </div>
+                    <div class="event__content">
+                      <h2 class="event__title">Name event</h2>
+                      <div class="event__description">
+                        <div class="event__description-item">
+                          <img src="/images/icon-location.svg" alt="" />
+                          <span> The Terraces at Bonita Springs 26455 S Tamiami Trail, Bonita Springs, FL 34134 </span>
+                        </div>
+                        <div class="event__description-item">
+                          <img src="/images/icon-date.svg" alt="" />
+                          <span> Monday, March 2nd from 9:00 am </span>
+                        </div>
+                      </div>
+                      <span class="event__link action-link">Register For the Event</span>
+                    </div>
+                  </a>
+                </div>
+                <div class="events__item event">
+                  <a href="#" class="event__inner">
+                    <div class="event__image-wrapper">
+                      <img src="/images/blog.png" alt="" class="event__image" />
+                    </div>
+                    <div class="event__content">
+                      <h2 class="event__title">Name event</h2>
+                      <div class="event__description">
+                        <div class="event__description-item">
+                          <img src="/images/icon-location.svg" alt="" />
+                          <span> The Terraces at Bonita Springs 26455 S Tamiami Trail, Bonita Springs, FL 34134 </span>
+                        </div>
+                        <div class="event__description-item">
+                          <img src="/images/icon-date.svg" alt="" />
+                          <span> Monday, March 2nd from 9:00 am </span>
+                        </div>
+                      </div>
+                      <span class="event__link action-link">Register For the Event</span>
+                    </div>
+                  </a>
+                </div>
+                <div class="events__item event">
+                  <a href="#" class="event__inner">
+                    <div class="event__image-wrapper">
+                      <img src="/images/blog.png" alt="" class="event__image" />
+                    </div>
+                    <div class="event__content">
+                      <h2 class="event__title">Name event</h2>
+                      <div class="event__description">
+                        <div class="event__description-item">
+                          <img src="/images/icon-location.svg" alt="" />
+                          <span> The Terraces at Bonita Springs 26455 S Tamiami Trail, Bonita Springs, FL 34134 </span>
+                        </div>
+                        <div class="event__description-item">
+                          <img src="/images/icon-date.svg" alt="" />
+                          <span> Monday, March 2nd from 9:00 am </span>
+                        </div>
+                      </div>
+                      <span class="event__link action-link">Register For the Event</span>
+                    </div>
+                  </a>
+                </div>
+                <div class="events__item event">
+                  <a href="#" class="event__inner">
+                    <div class="event__image-wrapper">
+                      <img src="/images/blog.png" alt="" class="event__image" />
+                    </div>
+                    <div class="event__content">
+                      <h2 class="event__title">Name event</h2>
+                      <div class="event__description">
+                        <div class="event__description-item">
+                          <img src="/images/icon-location.svg" alt="" />
+                          <span> The Terraces at Bonita Springs 26455 S Tamiami Trail, Bonita Springs, FL 34134 </span>
+                        </div>
+                        <div class="event__description-item">
+                          <img src="/images/icon-date.svg" alt="" />
+                          <span> Monday, March 2nd from 9:00 am </span>
+                        </div>
+                      </div>
+                      <span class="event__link action-link">Register For the Event</span>
+                    </div>
+                  </a>
+                </div>
+              </div>
+            </div>
+            <div class="events__no-events">
+              <div class="events__header">
+                <h2 class="events__title">There are currently no upcoming events scheduled</h2>
+                <p class="events__text">
+                  Please check back soon or sign up below to be notified of future presentations.
+                </p>
+              </div>
+              <div class="events__form">[FORM HERE]</div>
+            </div>
+          </div>
+        </section>
+      </main>
+      {{> footer}}
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/8.4.7/swiper-bundle.min.js"></script>
+    <script>
+      const backendData = {
+        smoothScroll: true,
+      };
+    </script>
+    <script type="module" src="/src/scripts/main.ts" defer></script>
+  </body>
+</html>
