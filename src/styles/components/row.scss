@@ -88,6 +88,9 @@
     flex: 0 1 rem(640);
     @include medium {
       flex: 0 1 100%;
+      a.button {
+        align-self: center;
+      }
     }
     ul li {
       list-style-type: disc;
@@ -100,10 +103,6 @@
     h3 {
       font-size: fluid(28, 40);
       font-weight: 500;
-    }
-
-    a.button {
-      align-self: center;
     }
   }
 
