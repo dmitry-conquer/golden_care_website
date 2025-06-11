@@ -55,6 +55,9 @@ body {
     flex-grow: 1;
     &.base-page {
       padding-top: fluid(80, 120);
+      background-position: center top;
+      background-repeat: no-repeat;
+      background-size: contain;
     }
   }
 }
