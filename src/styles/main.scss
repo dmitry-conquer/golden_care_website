@@ -3,6 +3,7 @@
 @use "variables";
 @use "utils";
 @use "globals";
+@use "typography";
 @use "helpers" as *;
 
 // Import components
@@ -27,3 +28,4 @@
 @use "./components/job";
 @use "./components/contact-form";
 @use "./components/blog";
+@use "./components/single-post";

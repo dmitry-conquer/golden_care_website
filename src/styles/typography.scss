@@ -1,30 +1,32 @@
+@use "./helpers/" as *;
+
 .prose {
-  --prose-body: #111827;
-  --prose-headings: #111827;
-  --prose-lead: #111827;
-  --prose-links: #111827;
-  --prose-bold: #111827;
-  --prose-counters: #111827;
-  --prose-bullets: #111827;
-  --prose-hr: #111827;
-  --prose-quotes: #111827;
-  --prose-quote-borders: #111827;
-  --prose-captions: #111827;
-  --prose-kbd: #111827;
+  --prose-body: #009fb7;
+  --prose-headings: #009fb7;
+  --prose-lead: #009fb7;
+  --prose-links: #009fb7;
+  --prose-bold: #009fb7;
+  --prose-counters: #009fb7;
+  --prose-bullets: #009fb7;
+  --prose-hr: #009fb7;
+  --prose-quotes: #009fb7;
+  --prose-quote-borders: #009fb7;
+  --prose-captions: #009fb7;
+  --prose-kbd: #009fb7;
   --prose-kbd-shadows: 17 24 39;
-  --prose-code: #111827;
-  --prose-pre-code: #111827;
-  --prose-pre-bg: #1f2937;
-  --prose-th-borders: #111827;
-  --prose-td-borders: #e5e7eb;
+  --prose-code: #009fb7;
+  --prose-pre-code: #009fb7;
+  --prose-pre-bg: #009fb7;
+  --prose-th-borders: #009fb7;
+  --prose-td-borders: #009fb7;
   --prose-invert-body: #d1d5db;
   --prose-invert-headings: #fff;
   --prose-invert-lead: #9ca3af;
   --prose-invert-links: #fff;
   --prose-invert-bold: #fff;
   --prose-invert-counters: #9ca3af;
-  --prose-invert-bullets: #4b5563;
-  --prose-invert-hr: #374151;
+  --prose-invert-bullets: #009fb7;
+  --prose-invert-hr: #009fb7;
   --prose-invert-quotes: #f3f4f6;
   --prose-invert-quote-borders: #374151;
   --prose-invert-captions: #9ca3af;
@@ -33,8 +35,8 @@
   --prose-invert-code: #fff;
   --prose-invert-pre-code: #d1d5db;
   --prose-invert-pre-bg: rgb(0 0 0 / 50%);
-  --prose-invert-th-borders: #4b5563;
-  --prose-invert-td-borders: #374151;
+  --prose-invert-th-borders: #009fb7;
+  --prose-invert-td-borders: #009fb7;
   font-size: 1.125rem;
   line-height: 1.75;
   @media (max-width: 575.98px) {
@@ -178,9 +180,9 @@
 .prose :where(h1):not(:where([class~="not-prose"], [class~="not-prose"] *)) {
   color: var(--prose-headings);
   font-weight: 800;
-  font-size: 2.25em;
+  font-size: fluid(40, 80);
   margin-top: 0;
-  margin-bottom: 0.8888889em;
+  margin-bottom: rem(16);
   line-height: 1.1111111;
 }
 
@@ -192,9 +194,9 @@
 .prose :where(h2):not(:where([class~="not-prose"], [class~="not-prose"] *)) {
   color: var(--prose-headings);
   font-weight: 700;
-  font-size: 1.5em;
+  font-size: fluid(28, 50);
   margin-top: 2em;
-  margin-bottom: 1em;
+  margin-bottom: rem(24);
   line-height: 1.3333333;
   @media (max-width: 575.98px) {
     font-size: 1.2em;

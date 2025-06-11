@@ -1,0 +1,86 @@
+@use "../helpers" as *;
+
+.single-post {
+  display: grid;
+  grid-template-columns: 1fr 27%;
+  column-gap: fluid(0, 165);
+
+  @include large {
+    grid-template-columns: 1fr;
+    row-gap: rem(40);
+  }
+
+  &__article {
+  }
+
+  &__aside {
+  }
+}
+
+.article {
+  &__title {
+  }
+
+  &__content {
+    h2:first-child {
+      margin-top: rem(24) !important;
+    }
+  }
+}
+
+.sidebar {
+  position: relative;
+  padding-left: rem(16);
+  &::after {
+    content: "";
+    width: rem(6);
+    height: rem(6);
+    background-color: var(--color-secondary);
+    position: absolute;
+    left: rem(-2);
+    top: 0;
+    border-radius: 50%;
+  }
+  &::before {
+    content: "";
+    position: absolute;
+    background: linear-gradient(180deg, #009fb7 0%, rgba(0, 159, 183, 0) 100%);
+    left: 0;
+    top: 0;
+    width: rem(2);
+    height: rem(424);
+  }
+  &__section {
+    &:not(:last-child) {
+      margin-bottom: rem(24);
+    }
+  }
+
+  &__title {
+    font-size: fluid(18, 32);
+    font-weight: 700;
+    line-height: 1;
+    letter-spacing: -0.64px;
+    margin-bottom: fluid(16, 24);
+  }
+
+  &__list {
+  }
+
+  &__item {
+    &:not(:last-child) {
+      margin-bottom: fluid(8, 16);
+    }
+    a {
+      transition: color 0.3s ease;
+      @include hover {
+        color: var(--color-primary);
+      }
+    }
+  }
+
+  &__image {
+    display: block;
+    margin-top: rem(32);
+  }
+}
