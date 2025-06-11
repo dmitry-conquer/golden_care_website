@@ -1,5 +1,5 @@
 @use "reset";
-// @use "fonts";
+@use "fonts";
 @use "variables";
 @use "utils";
 @use "globals";
@@ -26,3 +26,4 @@
 @use "./components/team";
 @use "./components/job";
 @use "./components/contact-form";
+@use "./components/blog";
