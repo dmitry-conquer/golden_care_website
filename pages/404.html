@@ -1,0 +1,32 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>not-found</title>
+  </head>
+  <body>
+    <div class="wrapper">
+      {{> header}}
+      <main>
+        <section class="not-found">
+          <div class="not-found__container">
+            <h1 class="not-found__title sr-only">404 - Page Not Found</h1>
+            <div class="not-found__body">
+              <p class="not-found__label">Oops</p>
+              <p class="not-found__subtitle">Looks like you're in the wrong place.</p>
+              <img src="/images/404.png" alt="" class="not-found__image" />
+              <p class="not-found__message">
+                Sometimes we all get lost. But don't worry - we're <br />
+                here to help you get back on track.
+              </p>
+              <a href="#" class="not-found__link button button_lg">Back to Home</a>
+            </div>
+          </div>
+        </section>
+      </main>
+      {{> footer}}
+    </div>
+    <script type="module" src="/src/scripts/main.ts" defer></script>
+  </body>
+</html>
