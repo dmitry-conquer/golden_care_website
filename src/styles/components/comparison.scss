@@ -9,10 +9,12 @@
     margin-bottom: fluid(40, 80);
   }
   &__body {
+    overflow: auto;
     background-color: var(--color-light);
     padding: fluid(0, 60) fluid(16, 60);
     @include small {
       background-color: transparent;
+      padding: 0;
     }
   }
   &__table {
@@ -24,7 +26,16 @@
       th {
         font-size: fluid(12, 28);
         text-align: left;
-        padding-bottom: rem(16);
+        padding: rem(8) rem(6);
+        font-size: fluid(12, 20);
+        line-height: 1.6;
+        letter-spacing: -0.4px;
+        &.yellow {
+          color: var(--color-primary);
+        }
+        &:not(:first-child) {
+          white-space: nowrap;
+        }
       }
     }
     tbody {
@@ -34,26 +45,23 @@
           border-bottom: none;
         }
         td:first-child {
-          padding-right: rem(30);
+          padding-right: fluid(5, 30);
         }
       }
 
-      th {
-        font-size: fluid(12, 20);
-        line-height: 1.6;
-        letter-spacing: -0.4px;
-        padding: rem(8) 0;
-        color: var(--color-text-secondary);
-      }
       td {
         font-size: fluid(12, 20);
         line-height: 1.6;
         letter-spacing: -0.4px;
-        padding: rem(8) 0;
+        padding: rem(8) rem(10);
+        &.yellow {
+          color: var(--color-primary);
+          .cross,
+          .checkmark {
+            color: var(--color-primary);
+          }
+        }
       }
-    }
-
-    td {
     }
   }
 }
@@ -61,6 +69,9 @@
 .checkmark {
   padding-right: rem(8);
   font-weight: 700;
+  &_yellow {
+    color: var(--color-primary);
+  }
 }
 .cross {
   padding-right: rem(8);

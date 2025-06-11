@@ -1,0 +1,129 @@
+@use "../helpers" as *;
+
+.accordion-columns {
+  &__container {
+  }
+
+  &__header {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    row-gap: fluid(16, 24);
+    margin-bottom: fluid(40, 80);
+
+    p {
+      max-width: rem(950);
+      margin: 0 auto;
+    }
+  }
+
+  &__body {
+    max-width: rem(1028);
+    margin: 0 auto;
+  }
+
+  &__item-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    column-gap: rem(40);
+    width: 100%;
+    padding: rem(24) 0;
+    border-bottom: rem(1) solid var(--color-border);
+    &.is-active {
+      .accordion-columns__item-header-icon {
+        span {
+          &:nth-child(1) {
+            transform: translate(-50%, -50%) rotate(0deg);
+          }
+        }
+      }
+    }
+  }
+
+  &__item-header-title {
+    font-size: fluid(16, 20);
+    line-height: 1.6;
+    letter-spacing: -0.4px;
+    text-align: left;
+    max-width: rem(431);
+    width: 100%;
+  }
+
+  &__item-header-icon {
+    width: fluid(32, 40);
+    height: fluid(32, 40);
+    border-radius: 50%;
+    flex-shrink: 0;
+    background-color: var(--color-primary);
+    position: relative;
+    span {
+      transition: transform 0.3s ease;
+      width: fluid(20, 24);
+      height: rem(2);
+      background-color: var(--color-white);
+      display: block;
+      position: absolute;
+      left: 50%;
+      top: 50%;
+      transform: translate(-50%, -50%);
+      &:nth-child(1) {
+        transform: translate(-50%, -50%) rotate(90deg);
+      }
+    }
+  }
+
+  &__item-content {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.3s ease;
+    will-change: max-height;
+  }
+
+  &__item-inner {
+    padding-top: rem(24);
+  }
+
+  &__item-columns {
+    background-color: var(--color-light);
+    border-radius: rem(30);
+    padding: fluid(16, 24);
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    max-width: rem(706);
+    margin-left: auto;
+    position: relative;
+
+    @include x-small {
+      grid-template-columns: 1fr;
+      max-width: 100%;
+      margin-left: 0;
+    }
+  }
+
+  &__column {
+    text-align: center;
+
+    &:nth-child(1) {
+      padding-right: rem(30);
+      border-right: rem(1) solid var(--color-border);
+      @include x-small {
+        padding-right: 0;
+        padding-bottom: rem(24);
+        border-right: 0;
+        border-bottom: rem(1) solid var(--color-border);
+      }
+    }
+    &:nth-child(2) {
+      padding-left: rem(30);
+      @include x-small {
+        padding-left: 0;
+        padding-top: rem(24);
+      }
+    }
+    h3 {
+      font-size: fluid(16, 20);
+      margin-bottom: rem(8);
+    }
+  }
+}
