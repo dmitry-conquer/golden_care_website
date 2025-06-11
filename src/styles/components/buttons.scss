@@ -24,6 +24,18 @@
   &_lg {
     padding: rem(14) rem(80);
   }
+
+  &_stroke {
+    color: var(--color-primary);
+    background-color: var(--color-white);
+    border: rem(1) solid var(--color-primary);
+
+    @include hover {
+      background-color: var(--color-primary);
+      border-color: var(--color-primary);
+      color: var(--color-white);
+    }
+  }
 }
 
 .action-link {

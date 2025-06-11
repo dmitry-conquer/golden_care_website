@@ -1,0 +1,33 @@
+@use "../helpers" as *;
+
+.availability {
+  &__body {
+    max-width: rem(800);
+    margin: 0 auto;
+    text-align: center;
+    &.blue-flower {
+      &::after {
+        top: rem(-10);
+        right: rem(-40);
+        opacity: 0.5;
+        transform: translateX(100%);
+      }
+    }
+    &.yellow-flower {
+      &::before {
+        top: rem(-10);
+        left: rem(-40);
+        transform: translateX(-100%);
+      }
+    }
+
+    h2 {
+      font-size: fluid(16, 32);
+      margin-bottom: fluid(8, 24);
+    }
+
+    p {
+      margin-bottom: rem(24);
+    }
+  }
+}

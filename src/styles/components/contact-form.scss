@@ -1,23 +1,25 @@
 @use "../helpers" as *;
 
 .contact-form {
-  padding-top: fluid(80, 200);
-  position: relative;
-  position: relative;
-  &::after {
-    content: "";
-    position: absolute;
-    border-top-left-radius: rem(1920);
-    border-top-right-radius: rem(1920);
-    max-width: rem(1920);
-    width: 100%;
-    height: rem(1920);
-    z-index: -1;
-    background: var(--color-white);
-    box-shadow: 0px -30px 40px 0px rgba(225, 225, 225, 0.25);
-    top: 0;
-    left: 50%;
-    transform: translateX(-50%);
+  padding-top: 0;
+  &_heading {
+    padding-top: fluid(80, 200);
+    position: relative;
+    &::after {
+      content: "";
+      position: absolute;
+      border-top-left-radius: rem(1920);
+      border-top-right-radius: rem(1920);
+      max-width: rem(1920);
+      width: 100%;
+      height: rem(1920);
+      z-index: -1;
+      background: var(--color-white);
+      box-shadow: 0px -30px 40px 0px rgba(225, 225, 225, 0.25);
+      top: 0;
+      left: 50%;
+      transform: translateX(-50%);
+    }
   }
 
   &__inner {
@@ -82,19 +84,12 @@
     display: flex;
     flex-direction: column;
     row-gap: fluid(16, 24);
-    position: relative;
-    &::after {
-      content: "";
-      position: absolute;
-      background-image: url("data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20%20viewBox%3D%220%200%20133%20133%22%20fill%3D%22none%22%3E%3Cmask%20id%3D%22mask0_212_1002%22%20style%3D%22mask-type%3Aalpha%22%20maskUnits%3D%22userSpaceOnUse%22%20x%3D%220%22%20y%3D%220%22%20width%3D%22133%22%20height%3D%22133%22%3E%3Cpath%20d%3D%22M0.00228727%20104.32C7.72115%2075.5127%2037.3313%2058.4173%2066.1385%2066.1361C58.4197%2094.9433%2028.8095%20112.039%200.00228727%20104.32Z%22%20fill%3D%22%23D9D9D9%22%2F%3E%3Cpath%20d%3D%22M66.1371%2066.1363C73.8559%2037.3291%20103.466%2020.2337%20132.273%2027.9525C124.554%2056.7597%2094.9442%2073.8552%2066.1371%2066.1363Z%22%20fill%3D%22%23D9D9D9%22%2F%3E%3Cpath%20d%3D%22M66.1371%2066.1363C73.8559%2037.3291%2056.7605%207.71895%2027.9533%209.0003e-05C20.2344%2028.8073%2037.3299%2058.4175%2066.1371%2066.1363Z%22%20fill%3D%22%23D9D9D9%22%2F%3E%3Cpath%20d%3D%22M104.323%20132.272C112.041%20103.465%2094.946%2073.8547%2066.1388%2066.1358C58.42%2094.943%2075.5154%20124.553%20104.323%20132.272Z%22%20fill%3D%22%23D9D9D9%22%2F%3E%3C%2Fmask%3E%3Cg%20mask%3D%22url(%23mask0_212_1002)%22%3E%3Crect%20x%3D%2227.5469%22%20y%3D%220.236328%22%20width%3D%22108.664%22%20height%3D%22108.664%22%20transform%3D%22rotate(15%2027.5469%200.236328)%22%20fill%3D%22%232EB1C5%22%2F%3E%3C%2Fg%3E%3C%2Fsvg%3E");
-      width: rem(108);
-      height: rem(108);
-      top: 0;
-      right: 0;
-      transform: translateX(70%);
 
-      @include large {
-        display: none;
+    &.blue-flower {
+      &::after {
+        top: 0;
+        right: 0;
+        transform: translateX(70%);
       }
     }
 
