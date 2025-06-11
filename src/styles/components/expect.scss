@@ -5,13 +5,28 @@
   }
 
   &__header {
+    position: relative;
+    padding: fluid(0, 200) rem(20) fluid(24, 180) rem(20);
+    @include medium {
+      padding-bottom: rem(24);
+    }
   }
 
   &__header-image {
+    position: absolute;
+    top: 50%;
+    left: 0;
+    transform: translateY(-50%);
+    @include medium {
+      position: static;
+      transform: none;
+    }
   }
 
   &__header-content {
     text-align: center;
+    position: relative;
+    z-index: 2;
   }
 
   &__body {
@@ -22,10 +37,20 @@
     align-items: center;
     justify-content: space-between;
     column-gap: rem(40);
+
+    @include medium {
+      flex-direction: column;
+      row-gap: rem(24);
+    }
   }
 
   &__video {
     flex: 0 1 rem(648);
+
+    @include medium {
+      flex: 0 1 auto;
+    }
+
     video {
       aspect-ratio: 1;
       width: 100%;
@@ -39,10 +64,13 @@
     flex: 0 1 rem(536);
     max-height: rem(568);
     overflow: auto;
-
     display: flex;
     flex-direction: column;
     row-gap: fluid(24, 40);
+
+    @include medium {
+      flex: 0 1 auto;
+    }
   }
 
   &__content-item {

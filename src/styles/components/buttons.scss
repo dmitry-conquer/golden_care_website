@@ -25,3 +25,31 @@
     padding: rem(14) rem(80);
   }
 }
+
+.action-link {
+  color: var(--color-secondary);
+  font-size: fluid(16, 20);
+  font-weight: 700;
+  line-height: 1.2;
+  letter-spacing: -0.4px;
+  display: flex;
+  align-items: center;
+  column-gap: rem(10);
+  transition: color 0.3s ease;
+
+  @include hover {
+    color: var(--color-primary);
+    &::before {
+      background-color: var(--color-primary);
+    }
+  }
+
+  &::before {
+    content: "";
+    width: rem(6);
+    height: rem(6);
+    border-radius: 50%;
+    background-color: var(--color-secondary);
+    transition: background-color 0.3s ease;
+  }
+}

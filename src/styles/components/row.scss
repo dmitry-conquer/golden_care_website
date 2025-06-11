@@ -101,6 +101,10 @@
       font-size: fluid(28, 40);
       font-weight: 500;
     }
+
+    a.button {
+      align-self: center;
+    }
   }
 
   &__image {

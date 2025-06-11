@@ -1,0 +1,73 @@
+@use "../helpers" as *;
+
+.team {
+  &__container {
+  }
+
+  &__title {
+    margin-bottom: fluid(40, 80);
+    text-align: center;
+  }
+
+  &__list {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: fluid(10, 40);
+
+    @include medium {
+      grid-template-columns: repeat(2, 1fr);
+      column-gap: rem(12);
+    }
+  }
+
+  &__item {
+    border-radius: rem(30);
+    box-shadow:
+      4px 0px 8px 0px rgba(255, 255, 255, 0.25),
+      0px 6px 8px 0px rgba(88, 88, 88, 0.1);
+
+    &_no-image {
+      .team__item-image {
+        display: flex;
+        justify-content: center;
+      }
+    }
+  }
+
+  &__item-image {
+    border-radius: rem(30);
+    background-color: var(--color-light);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    padding-top: rem(24);
+    height: fluid(160, 390);
+
+    img {
+      width: 100%;
+      height: 100%;
+      object-fit: contain;
+      object-position: bottom;
+    }
+  }
+
+  &__item-content {
+    padding: fluid(8, 35) fluid(8, 24) fluid(16, 40) fluid(8, 24);
+  }
+
+  &__item-title {
+    font-size: fluid(16, 32);
+    font-weight: 700;
+    line-height: 1;
+    letter-spacing: -0.64px;
+    margin-bottom: fluid(0, 8);
+  }
+
+  &__item-job-title {
+    font-size: fluid(12, 20);
+    line-height: 1;
+  }
+}
