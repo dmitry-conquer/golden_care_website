@@ -1,12 +1,6 @@
 @use "../helpers" as *;
 
 .not-found {
-  &__container {
-  }
-
-  &__title {
-  }
-
   &__body {
     padding: fluid(150, 220) rem(20) fluid(150, 171) rem(20);
     display: flex;

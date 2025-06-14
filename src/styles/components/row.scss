@@ -1,6 +1,23 @@
 @use "../helpers" as *;
 
 .rows {
+  &__header {
+    max-width: rem(1000);
+    margin: 0 auto;
+    text-align: center;
+    margin-bottom: fluid(40, 80);
+
+    h2 {
+      margin-bottom: rem(24);
+    }
+
+    p {
+      font-size: fluid(22, 28);
+      font-weight: 700;
+      line-height: 1.14;
+    }
+  }
+
   &_yellow {
     background-color: var(--color-primary-light);
   }
