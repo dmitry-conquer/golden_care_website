@@ -38,6 +38,7 @@
 
 .event {
   &__inner {
+    height: 100%;
     display: flex;
     padding: fluid(16, 24);
     border-radius: rem(24);

@@ -95,9 +95,8 @@ main {
 }
 
 a:not([class]) {
-  transition: color 0.3s ease;
   @include hover {
-    color: var(--color-secondary);
+    text-decoration: underline;
   }
 }
 
