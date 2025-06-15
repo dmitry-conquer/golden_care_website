@@ -121,6 +121,9 @@
       font-size: fluid(28, 40);
       font-weight: 500;
     }
+    a:not(.button) {
+      text-decoration: underline;
+    }
   }
 
   &__image {

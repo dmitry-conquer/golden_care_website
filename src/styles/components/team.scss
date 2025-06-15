@@ -23,6 +23,7 @@
 
   &__item {
     border-radius: rem(30);
+    cursor: pointer;
     box-shadow:
       4px 0px 8px 0px rgba(255, 255, 255, 0.25),
       0px 6px 8px 0px rgba(88, 88, 88, 0.1);
@@ -32,6 +33,10 @@
         display: flex;
         justify-content: center;
       }
+    }
+
+    @include small {
+      border-radius: rem(15);
     }
   }
 
@@ -70,5 +75,9 @@
   &__item-job-title {
     font-size: fluid(12, 20);
     line-height: 1;
+  }
+
+  &__item-full {
+    display: none;
   }
 }

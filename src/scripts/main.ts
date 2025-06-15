@@ -6,6 +6,8 @@ import AccordionCollection from "./components/accordion";
 import Header from "./components/header";
 //@ts-expect-error missing types
 import { useDynamicAdapt } from "./dynamicAdapt";
+import { initModal } from "./modal";
+import Members from "./components/members";
 import "../styles/main.scss";
 import "glightbox/dist/css/glightbox.min.css";
 
@@ -23,4 +25,7 @@ document.addEventListener("DOMContentLoaded", () => {
   const scroll = new Scroll();
   scroll.initSmoothScroll();
   scroll.initAOS();
+
+  initModal(scroll);
+  new Members(scroll);
 });

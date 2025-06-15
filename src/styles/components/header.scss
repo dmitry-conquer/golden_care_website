@@ -1,16 +1,18 @@
 @use "../helpers" as *;
 
 .header {
-  --header-height: #{rem(125)};
+  --header-height: #{rem(106)};
 
   position: absolute;
   z-index: 9999;
   top: 0;
   left: 0;
   width: 100%;
+  background-color: var(--color-white);
+  box-shadow: 0px 4px 10px 0px rgba(0, 0, 0, 0.05);
 
   @include small {
-    --header-height: #{rem(90)};
+    --header-height: #{rem(70)};
   }
 
   @include x-small {
@@ -165,7 +167,6 @@
       right: 0;
     }
   }
-
   &__nav {
     padding-top: rem(20);
   }
@@ -194,14 +195,14 @@
     flex-direction: column;
     row-gap: rem(16);
   }
+  &__contact-title {
+    color: var(--color-white);
+    font-size: rem(20);
+    font-weight: 700;
+    line-height: 1.37;
+    margin-bottom: rem(8);
+  }
   &__contact {
-    h2 {
-      color: var(--color-white);
-      font-size: rem(20);
-      font-weight: 700;
-      line-height: 1.37;
-      margin-bottom: rem(8);
-    }
     address {
       font-style: normal;
       display: flex;

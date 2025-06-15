@@ -1,0 +1,28 @@
+@use "../helpers/" as *;
+
+.member-modal {
+  &__inner {
+    max-width: rem(1200);
+  }
+
+  &__content {
+    padding: fluid(40, 60) fluid(20, 60) fluid(20, 60);
+    h3 {
+      margin-bottom: rem(8);
+      font-size: fluid(28, 32);
+    }
+    h4 {
+      margin-bottom: rem(24);
+      font-size: fluid(18, 20);
+    }
+  }
+
+  &__close {
+    svg {
+      color: var(--color-primary);
+    }
+  }
+
+  &__info {
+  }
+}

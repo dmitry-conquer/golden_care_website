@@ -223,7 +223,7 @@
           <div class="team__container container">
             <h2 class="team__title">Meet the Team</h2>
             <div class="team__list">
-              <div class="team__item">
+              <div class="team__item" data-js-member>
                 <div class="team__item-image">
                   <img src="/images/p1.png" alt="Team Member 1" loading="lazy" />
                 </div>
@@ -231,35 +231,33 @@
                   <h3 class="team__item-title">Christopher Melley</h3>
                   <span class="team__item-job-title">Chief Executive Officer</span>
                 </div>
-              </div>
-              <div class="team__item team__item_no-image">
-                <div class="team__item-image">
-                  <img src="/images/np1.png" alt="Team Member 1" loading="lazy" />
-                </div>
-                <div class="team__item-content">
-                  <h3 class="team__item-title">Christopher Melley</h3>
-                  <span class="team__item-job-title">Chief Executive Officer</span>
-                </div>
-              </div>
-              <div class="team__item">
-                <div class="team__item-image">
-                  <img src="/images/p1.png" alt="Team Member 1" loading="lazy" />
-                </div>
-                <div class="team__item-content">
-                  <h3 class="team__item-title">Christopher Melley</h3>
-                  <span class="team__item-job-title">Chief Executive Officer</span>
-                </div>
-              </div>
-              <div class="team__item team__item_no-image">
-                <div class="team__item-image">
-                  <img src="/images/np1.png" alt="Team Member 1" loading="lazy" />
-                </div>
-                <div class="team__item-content">
-                  <h3 class="team__item-title">Christopher Melley</h3>
-                  <span class="team__item-job-title">Chief Executive Officer</span>
+                <div class="team__item-full" data-js-member-bio>
+                  <h3>Christopher Melley</h3>
+                  <p>
+                    His visionary thinking and inspirational leadership has led to the development Golden Care, a home
+                    care agency dedicated to providing the finest level of concierge, private home care services. With
+                    the addition of Golden Care, The Melley Group now offers a full spectrum of services dedicated to
+                    promoting the well-being and health of our clients. Determined to be the best home care service
+                    provider in Florida, and eventually the entire United States, Christopher believes that recruiting
+                    exceptional people, with a passion for serving our seniors and providing them the tools and training
+                    to further develop, Golden Care is well positioned for continued expansion. Driven by the Golden
+                    Rule, "do unto others as you would have them do unto you," he has built an organization where home
+                    care professionals can passionately do what they do best, which is provide excellent care and
+                    quality of life for our clients.
+                  </p>
+                  <p>
+                    By combining passion, ambition, and compassion, Christopher has built Golden Care utilizing a unique
+                    and unmatched set of skills, which are demonstrated by employee and referral source loyalty and
+                    exceptional customer service for the senior’s whose lives have been entrusted to their care.
+                  </p>
+                  <p>
+                    Chris holds a Bachelor of Business Administration with Honors from the University of Miami and is
+                    continuously partaking in focus groups and think tanks geared toward elevating the client care
+                    experience.
+                  </p>
                 </div>
               </div>
-              <div class="team__item">
+              <div class="team__item" data-js-member>
                 <div class="team__item-image">
                   <img src="/images/p2.png" alt="Team Member 1" loading="lazy" />
                 </div>
@@ -267,12 +265,44 @@
                   <h3 class="team__item-title">Christopher Melley</h3>
                   <span class="team__item-job-title">Chief Executive Officer</span>
                 </div>
+                <div class="team__item-full" data-js-member-bio>
+                  <h3>Christopher Melley</h3>
+                  <h4>Chief Executive Officer</h4>
+                  <p>
+                    Christopher Melley is the Founder and CEO of The Melley Group, a family-owned and operated
+                    organization dedicated to the well-being and quality of life of our community's seniors. Since 2004,
+                    The Melley Group has become recognized as one of the leading providers of home health care in
+                    Florida.
+                  </p>
+                  <p>
+                    His visionary thinking and inspirational leadership has led to the development Golden Care, a home
+                    care agency dedicated to providing the finest level of concierge, private home care services. With
+                    the addition of Golden Care, The Melley Group now offers a full spectrum of services dedicated to
+                    promoting the well-being and health of our clients. Determined to be the best home care service
+                    provider in Florida, and eventually the entire United States, Christopher believes that recruiting
+                    exceptional people, with a passion for serving our seniors and providing them the tools and training
+                    to further develop, Golden Care is well positioned for continued expansion. Driven by the Golden
+                    Rule, "do unto others as you would have them do unto you," he has built an organization where home
+                    care professionals can passionately do what they do best, which is provide excellent care and
+                    quality of life for our clients.
+                  </p>
+                  <p>
+                    By combining passion, ambition, and compassion, Christopher has built Golden Care utilizing a unique
+                    and unmatched set of skills, which are demonstrated by employee and referral source loyalty and
+                    exceptional customer service for the senior’s whose lives have been entrusted to their care.
+                  </p>
+                  <p>
+                    Chris holds a Bachelor of Business Administration with Honors from the University of Miami and is
+                    continuously partaking in focus groups and think tanks geared toward elevating the client care
+                    experience.
+                  </p>
+                </div>
               </div>
             </div>
           </div>
         </section>
       </main>
-      {{> footer}}
+      {{> footer}} {{> member-modal}}
     </div>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/8.4.7/swiper-bundle.min.js"></script>
     <script>
