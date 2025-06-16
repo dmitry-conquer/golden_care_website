@@ -31,7 +31,7 @@
           column-gap: rem(8);
 
           &:not(:last-child) {
-            margin-bottom: rem(8);
+            margin-bottom: rem(16);
           }
 
           img {
@@ -58,13 +58,13 @@
     justify-content: space-between;
     gap: rem(24) rem(40);
     @include medium {
-      flex-direction: column;
+      flex-direction: column-reverse;
     }
 
     &_reverse {
       flex-direction: row-reverse;
       @include medium {
-        flex-direction: column;
+        flex-direction: column-reverse;
       }
     }
     &_reduce-image {

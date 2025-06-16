@@ -1,6 +1,6 @@
 @use "../helpers" as *;
 
-.single-post {
+.single-article {
   display: grid;
   grid-template-columns: 1fr 27%;
   column-gap: fluid(0, 165);
