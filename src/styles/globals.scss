@@ -121,3 +121,7 @@ p:not([class]):not(:last-of-type) {
   padding: 0 var(--container-padding-x);
   margin: 0 auto;
 }
+
+.prose-page {
+  padding: fluid(40, 80) 0;
+}

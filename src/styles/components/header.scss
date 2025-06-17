@@ -42,6 +42,14 @@
     max-width: fluid(120, 262);
     z-index: 1000;
     height: rem(78);
+
+    @include x-large {
+      max-width: rem(160);
+    }
+
+    @include x-small {
+      max-width: rem(130);
+    }
   }
   &__logo {
     width: 100%;

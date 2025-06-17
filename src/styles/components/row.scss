@@ -121,7 +121,7 @@
       font-size: fluid(28, 40);
       font-weight: 500;
     }
-    a:not(.button) {
+    a:not(.button):not(.action-link) {
       text-decoration: underline;
     }
   }
