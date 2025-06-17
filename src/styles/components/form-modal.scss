@@ -1,0 +1,44 @@
+@use "../helpers/" as *;
+
+.form-modal {
+  &__inner {
+    max-width: rem(600);
+    border-radius: rem(24);
+  }
+
+  &__content {
+    padding: fluid(40, 60) fluid(20, 60) fluid(20, 60);
+    background-color: var(--color-secondary);
+    border-radius: rem(24);
+
+    h3 {
+      margin-bottom: rem(8);
+      font-size: fluid(28, 32);
+    }
+    h4 {
+      margin-bottom: rem(24);
+      font-size: fluid(18, 20);
+    }
+  }
+
+  &__close {
+    svg {
+      color: var(--color-white);
+    }
+    @include hover {
+      svg {
+        color: var(--color-primary);
+      }
+    }
+  }
+
+  &__form {
+    &-title {
+      margin-bottom: rem(24);
+      font-size: fluid(40, 50);
+      text-align: center;
+      color: var(--color-white);
+      text-align: center;
+    }
+  }
+}

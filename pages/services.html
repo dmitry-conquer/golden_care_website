@@ -4,51 +4,27 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/8.4.7/swiper-bundle.min.css" />
-    <title>Front page</title>
+    <title>Services</title>
   </head>
   <body>
     <div class="wrapper">
       {{> header}}
-      <main>
-        <section class="front-hero">
-          <div class="front-hero__background">
-            <video
-              class="front-hero__video"
-              src="/video.mp4"
-              autoplay
-              playsinline
-              loop
-              muted
-              poster="/images/hero.webp"
-            ></video>
+      <main class="base-page">
+        <section class="services-hero">
+          <div class="services-hero__content">
+            <h1 class="services-hero__title h2">
+              Golden Care - Home Care <br />
+              Services for Independent Living
+            </h1>
           </div>
-          <div class="front-hero__container">
-            <div class="front-hero__content">
-              <h1>Golden Care</h1>
-              <p>Compassionate Home Care Agency in Naples, FL, and throughout Southwest Florida</p>
-              <a href="#" class="button">Contact Us</a>
-            </div>
-          </div>
-        </section>
-
-        <section class="under-front-hero base-section">
-          <div class="base-section__container container">
-            <h2 class="base-section__title sr-only">About Golden Care</h2>
-            <div class="base-section__content">
-              <p>
-                Golden Care is a trusted home care agency in Naples, FL, providing compassionate non-medical support for
-                seniors. We help clients live safely and comfortably at home with personalized care tailored to their
-                needs. Our reliable caregivers enhance daily life while promoting independence, dignity, and peace of
-                mind — always with the gold standard of quality.
-              </p>
-            </div>
-          </div>
+          <img src="/images/services-hero.png" alt="#" class="services-hero__image" />
+          <img src="/images/services-hero-mob.png" alt="#" class="services-hero__image_mobile" />
         </section>
 
         <section class="rows section">
           <div class="rows__container container">
             <div class="rows__item row">
-              <div class="row__inner">
+              <div class="row__inner row__inner_reverse">
                 <div data-aos="fade-up" data-aos-delay="50" class="row__content">
                   <h2>
                     <strong>Who We Are –</strong> <br />
@@ -73,92 +49,72 @@
                 </div>
               </div>
             </div>
-            <div class="rows__item row">
-              <div class="row__inner row__inner_reverse">
-                <div data-aos="fade-up" data-aos-delay="50" class="row__content">
-                  <h3>What makes Golden Care stand out?</h3>
-                  <p>
-                    We combine a concierge-level of service with a personal touch. Our approach to care is holistic,
-                    addressing not just physical assistance but also emotional support and social engagement. From the
-                    moment you reach out to us, you’ll find a warm, knowledgeable team ready to guide you. We are fully
-                    licensed, bonded, and insured, giving your family peace of mind. Most of all, we are passionate
-                    local professionals driven by a desire to help seniors in our community thrive at home.
-                  </p>
-                  <ul>
-                    <li><strong>Learm More About Golden Care</strong></li>
-                  </ul>
-                </div>
-                <div data-aos="fade-up" data-aos-delay="100" class="row__image">
-                  <img src="/images/front2.webp" alt="#" loading="lazy" />
-                </div>
-              </div>
-            </div>
           </div>
         </section>
 
-        <section class="features section">
-          <img src="/images/svg/dec.svg" alt="" class="features__background" />
-          <div class="features__container container">
-            <div class="features__header">
-              <h2 data-aos="fade-up" class="features__title big-title">Why Choose Us</h2>
-              <p data-aos="fade-up" data-aos-delay="50">
-                Families trust Golden Care because we take action, stay involved, and <br />
-                truly care. Here’s how our home care agency in Naples stands out:
+        <section class="simple-bold-section section pt-0">
+          <div class="simple-bold-section__container container">
+            <p>
+              Whether your family needs short-term support during recovery or ongoing care for a loved one with memory
+              challenges, our team is here to provide compassionate, attentive service.
+            </p>
+            <a href="#" class="button">Request an appointment</a>
+          </div>
+        </section>
+
+        <section class="image-scroll section">
+          <div class="image-scroll__container">
+            <div class="image-scroll__header">
+              <h2>Why Families Choose Us</h2>
+              <p><strong>Reliable Support. Trusted Care.</strong></p>
+              <p>
+                Choosing the right home care provider is a significant decision. Here’s what sets Golden Care apart:
               </p>
             </div>
-            <div class="features__items">
-              <div data-aos="fade-up" data-aos-delay="50" class="features__item feature">
-                <div class="feature__icon-wrapper">
-                  <img src="/images/svg/f1.svg" class="feature__icon" alt="" loading="lazy" />
-                </div>
-                <div class="feature__content">
-                  <h3 class="h4 feature__title">We build real connections</h3>
-                  <p class="feature__text">
-                    We match clients with caregivers who fit their lifestyle, building trusted, lasting relationships.
+
+            <div class="image-scroll__body container">
+              <div class="image-scroll__image">
+                <img src="/images/ser-i/image.png" alt="" />
+              </div>
+              <div class="image-scroll__content" data-lenis-prevent>
+                <div class="image-scroll__content-item">
+                  <img src="/images/ser-i/1.svg" alt="" />
+                  <h3>Calling Golden Care</h3>
+                  <p>
+                    Our highly-trained staff are ready to talk with you about your needs and answer your questions. Once
+                    we understand your situation, we’ll provide you with elder care options for your loved one, describe
+                    our services in detail, and schedule an in-home visit to conduct a thorough needs evaluation.  Give
+                    us a call 24 hours a day, 7 days a week.
                   </p>
                 </div>
-              </div>
-              <div data-aos="fade-up" data-aos-delay="100" class="features__item feature">
-                <div class="feature__icon-wrapper">
-                  <img src="/images/svg/f1.svg" class="feature__icon" alt="" loading="lazy" />
-                </div>
-                <div class="feature__content">
-                  <h3 class="h4 feature__title">We build real connections</h3>
-                  <p class="feature__text">
-                    We match clients with caregivers who fit their lifestyle, building trusted, lasting relationships.
+                <div class="image-scroll__content-item">
+                  <img src="/images/ser-i/1.svg" alt="" />
+                  <h3>Calling Golden Care</h3>
+                  <p>
+                    Our highly-trained staff are ready to talk with you about your needs and answer your questions. Once
+                    we understand your situation, we’ll provide you with elder care options for your loved one, describe
+                    our services in detail, and schedule an in-home visit to conduct a thorough needs evaluation.  Give
+                    us a call 24 hours a day, 7 days a week.
                   </p>
                 </div>
-              </div>
-              <div data-aos="fade-up" data-aos-delay="150" class="features__item feature">
-                <div class="feature__icon-wrapper">
-                  <img src="/images/svg/f1.svg" class="feature__icon" alt="" loading="lazy" />
-                </div>
-                <div class="feature__content">
-                  <h3 class="h4 feature__title">We build real connections</h3>
-                  <p class="feature__text">
-                    We match clients with caregivers who fit their lifestyle, building trusted, lasting relationships.
+                <div class="image-scroll__content-item">
+                  <img src="/images/ser-i/1.svg" alt="" />
+                  <h3>Calling Golden Care</h3>
+                  <p>
+                    Our highly-trained staff are ready to talk with you about your needs and answer your questions. Once
+                    we understand your situation, we’ll provide you with elder care options for your loved one, describe
+                    our services in detail, and schedule an in-home visit to conduct a thorough needs evaluation.  Give
+                    us a call 24 hours a day, 7 days a week.
                   </p>
                 </div>
-              </div>
-              <div data-aos="fade-up" data-aos-delay="100" class="features__item feature">
-                <div class="feature__icon-wrapper">
-                  <img src="/images/svg/f1.svg" class="feature__icon" alt="" loading="lazy" />
-                </div>
-                <div class="feature__content">
-                  <h3 class="h4 feature__title">We build real connections</h3>
-                  <p class="feature__text">
-                    We match clients with caregivers who fit their lifestyle, building trusted, lasting relationships.
-                  </p>
-                </div>
-              </div>
-              <div data-aos="fade-up" data-aos-delay="50" class="features__item feature">
-                <div class="feature__icon-wrapper">
-                  <img src="/images/svg/f1.svg" class="feature__icon" alt="" loading="lazy" />
-                </div>
-                <div class="feature__content">
-                  <h3 class="h4 feature__title">We build real connections</h3>
-                  <p class="feature__text">
-                    We match clients with caregivers who fit their lifestyle, building trusted, lasting relationships.
+                <div class="image-scroll__content-item">
+                  <img src="/images/ser-i/1.svg" alt="" />
+                  <h3>Calling Golden Care</h3>
+                  <p>
+                    Our highly-trained staff are ready to talk with you about your needs and answer your questions. Once
+                    we understand your situation, we’ll provide you with elder care options for your loved one, describe
+                    our services in detail, and schedule an in-home visit to conduct a thorough needs evaluation.  Give
+                    us a call 24 hours a day, 7 days a week.
                   </p>
                 </div>
               </div>
@@ -689,7 +645,6 @@
         </section>
       </main>
       {{> footer}}
-      {{> form-modal}}
     </div>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/8.4.7/swiper-bundle.min.js"></script>
     <script>

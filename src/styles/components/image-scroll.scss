@@ -1,0 +1,85 @@
+@use "../helpers" as *;
+
+.image-scroll {
+  &__container {
+  }
+
+  &__header {
+    position: relative;
+    margin-bottom: fluid(40, 80);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: rem(16);
+    & * {
+      margin: 0 !important;
+    }
+  }
+
+  &__header-image {
+    position: absolute;
+    top: 50%;
+    left: 0;
+    transform: translateY(-50%);
+    @include medium {
+      position: static;
+      transform: none;
+    }
+  }
+
+  &__body {
+    background-color: var(--color-light);
+    padding: fluid(24, 80) fluid(16, 80);
+    border-radius: rem(30);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    column-gap: rem(40);
+
+    @include medium {
+      flex-direction: column;
+      row-gap: rem(24);
+    }
+  }
+
+  &__image {
+    flex: 0 1 rem(648);
+
+    @include medium {
+      flex: 0 1 auto;
+    }
+
+    img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      border-radius: rem(24);
+    }
+  }
+
+  &__content {
+    flex: 0 1 rem(536);
+    max-height: rem(568);
+    overflow: auto;
+    display: flex;
+    flex-direction: column;
+    row-gap: fluid(24, 40);
+
+    @include medium {
+      flex: 0 1 auto;
+    }
+  }
+
+  &__content-item {
+    padding: rem(16);
+    background-color: var(--color-light-100);
+    border-radius: rem(16);
+    display: flex;
+    flex-direction: column;
+    row-gap: rem(16);
+    align-items: flex-start;
+    h3 {
+      font-size: fluid(28, 32);
+    }
+  }
+}

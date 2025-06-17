@@ -1,0 +1,20 @@
+@use "../helpers" as *;
+
+.simple-bold-section {
+  margin: 0 auto;
+  &__container {
+    max-width: rem(1200);
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: fluid(16, 24);
+  }
+  p {
+    text-align: center;
+    font-size: fluid(16, 32);
+    font-weight: 700;
+    line-height: 1;
+    letter-spacing: -0.64px;
+  } 
+}

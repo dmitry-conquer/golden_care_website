@@ -5,36 +5,38 @@
   justify-content: center;
   align-items: center;
   gap: rem(16);
-}
 
-.page-numbers {
-  display: flex;
-  gap: rem(16);
-  list-style: none;
-  
-  a, span {
+  .page-numbers {
     display: flex;
-    align-items: center;
-    justify-content: center;
-    width: rem(40);
-    height: rem(40);
-    border-radius: rem(4);
-    color: var(--color-white);
-    background-color: var(--color-secondary);
-    transition: background-color 0.3s ease;
-    
-    &:hover {
-      background-color: var(--color-primary);
+    gap: rem(16);
+    list-style: none;
+
+    a,
+    span {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: rem(40);
+      height: rem(40);
+      border-radius: rem(4);
+      color: var(--color-white);
+      background-color: var(--color-secondary);
+      transition: background-color 0.3s ease;
+
+      &:hover {
+        background-color: var(--color-primary);
+      }
     }
   }
-}
 
-.current {
-  background-color: var(--color-primary) !important;
-  font-weight: 600;
-}
+  .current {
+    background-color: var(--color-primary) !important;
+    font-weight: 600;
+  }
 
-.next, .prev {
-  padding: 0 rem(16);
-  width: auto !important;
+  .next,
+  .prev {
+    padding: 0 rem(16);
+    width: auto !important;
+  }
 }
