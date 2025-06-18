@@ -80,4 +80,9 @@
   &__item-full {
     display: none;
   }
+
+  &__item-more {
+    margin-top: fluid(16, 33);
+    font-size: fluid(14, 20);
+  }
 }

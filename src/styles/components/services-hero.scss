@@ -26,6 +26,7 @@
 
     &_mobile {
       margin-top: rem(-60);
+      width: 100%;
       @include above-x-small {
         display: none;
       }

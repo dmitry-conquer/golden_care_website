@@ -3,11 +3,12 @@
 .features {
   position: relative;
   &__background {
+    object-fit: contain;
     position: absolute;
     width: 100%;
     height: 100%;
     left: 0;
-    top: rem(-260);
+    top: -12.25rem;
     z-index: -1;
     @include large {
       display: none;
