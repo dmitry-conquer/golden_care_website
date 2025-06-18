@@ -1,15 +1,17 @@
 @use "../helpers" as *;
 
 .footer {
+  &_alt {
+    background-color: var(--color-primary);
+
+    .footer-left {
+      padding-top: 0;
+    }
+  }
+
   &__body {
     background-color: var(--color-secondary);
     padding-bottom: rem(40);
-  }
-  &__container {
-  }
-  &__top {
-  }
-  &__container {
   }
   &__content {
     display: grid;
