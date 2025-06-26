@@ -101,9 +101,9 @@
     font-size: fluid(16, 18);
     font-weight: 700;
     line-height: 1.22;
-    transition: color 0.3s ease;
+    transition: opacity 0.3s ease;
     @include hover {
-      color: var(--color-primary);
+      opacity: 0.7;
     }
     @include small {
       font-weight: 400;

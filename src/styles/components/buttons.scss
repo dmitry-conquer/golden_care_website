@@ -14,7 +14,7 @@
   border: rem(1) solid transparent;
   transition: all 0.3s ease;
   @include hover {
-    background-color: var(--color-white);
+    background-color: transparent;
     border-color: var(--color-primary);
     color: var(--color-primary);
   }
@@ -44,24 +44,32 @@
   font-weight: 700;
   line-height: 1.2;
   letter-spacing: -0.4px;
-  display: flex;
-  align-items: center;
-  column-gap: rem(10);
   transition: color 0.3s ease;
+  position: relative;
+  padding-left: rem(16);
 
   @include hover {
-    color: var(--color-primary);
     &::before {
-      background-color: var(--color-primary);
+      background-image: url("data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%2220%22%20height%3D%2220%22%20viewBox%3D%220%200%2020%2020%22%20fill%3D%22none%22%3E%3Cpath%20d%3D%22M6.22867%2012.3125H6.3887C4.86841%2013.7733%203.94824%2015.8184%203.90823%2017.947C3.90823%2018.5313%203.94824%2019.1156%204.06826%2019.6582C4.10827%2019.9086%204.34832%2020.0338%204.54835%2019.9921C7.18885%2019.4495%209.26924%2017.4879%2010.1494%2014.9002C11.1496%2017.4044%2013.35%2019.2408%2016.0305%2019.6165C16.1505%2019.6165%2016.2305%2019.6165%2016.3506%2019.533C16.4306%2019.4495%2016.4706%2019.366%2016.5106%2019.2408C16.8707%2016.4862%2015.7905%2013.7733%2013.7501%2012.062C16.3506%2011.8951%2018.751%2010.2673%2019.9512%207.84658C20.0713%207.6379%2019.9512%207.38747%2019.7912%207.304C17.4308%206.01015%2014.5902%206.21883%2012.3898%207.6379C13.07%205.05019%2012.4698%202.21207%2010.5895%200.125211C10.5095%200.0417371%2010.4295%200%2010.3094%200C10.1894%200%2010.1094%200.0417371%2010.0294%200.125211C7.90898%202.21207%207.22886%205.30062%208.06901%208.097C6.9088%207.304%205.54854%206.84489%204.14828%206.84489C2.74802%206.80315%201.38776%207.17879%200.187535%207.93006C-0.0125023%208.05527%20-0.0525099%208.30569%200.0675127%208.51438C1.26774%2010.8517%203.66819%2012.2707%206.22867%2012.3125ZM10.0694%208.01353C11.4697%208.01353%2012.5499%209.18217%2012.5499%2010.643C12.5499%2012.1038%2011.4296%2013.2724%2010.0694%2013.2724C8.66913%2013.2724%207.54892%2012.1038%207.54892%2010.643C7.54892%209.18217%208.70913%208.01353%2010.0694%208.01353Z%22%20fill%3D%22%23009FB7%22%2F%3E%3Cpath%20d%3D%22M10.0694%208.01353C11.4697%208.01353%2012.5499%209.18217%2012.5499%2010.643C12.5499%2012.1038%2011.4296%2013.2724%2010.0694%2013.2724C8.66913%2013.2724%207.54892%2012.1038%207.54892%2010.643C7.54892%209.18217%208.70913%208.01353%2010.0694%208.01353Z%22%20fill%3D%22%23009FB7%22%2F%3E%3C%2Fsvg%3E");
+      border-radius: unset;
+      width: rem(20);
+      height: rem(20);
+      transition: background-image 0.5s ease;
     }
   }
 
   &::before {
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translateY(-60%) translateX(-50%);
     content: "";
     width: rem(6);
     height: rem(6);
-    border-radius: 50%;
-    background-color: var(--color-secondary);
-    transition: background-color 0.3s ease;
+    background-image: url("data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%226%22%20height%3D%226%22%20viewBox%3D%220%200%206%206%22%20fill%3D%22none%22%3E%3Ccircle%20cx%3D%223%22%20cy%3D%223%22%20r%3D%223%22%20fill%3D%22%23009FB7%22%2F%3E%3C%2Fsvg%3E");
+    transition: background-image 0.5s ease;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
   }
 }

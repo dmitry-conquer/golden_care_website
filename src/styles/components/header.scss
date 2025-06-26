@@ -76,7 +76,24 @@
     line-height: 1.22;
     transition: color 0.3s ease;
     white-space: nowrap;
+    position: relative;
+
+    &::after {
+      content: "";
+      position: absolute;
+      width: 0;
+      height: 2px;
+      top: calc(100% + 2px);
+      left: 0;
+      background-color: var(--color-secondary);
+      transition: width 0.3s ease;
+    }
     @include hover {
+      &::after {
+        width: 100%;
+      }
+    }
+    &:active {
       color: var(--color-primary);
     }
   }
@@ -94,11 +111,26 @@
     font-weight: 700;
     line-height: 1.2;
     transition: color 0.3s ease;
-    @include hover {
-      color: var(--color-secondary);
-    }
+    position: relative;
+  
     @include large {
       display: none;
+    }
+
+    &::after {
+      content: "";
+      position: absolute;
+      width: 0;
+      height: 2px;
+      top: calc(100% + 2px);
+      left: 0;
+      background-color: var(--color-primary);
+      transition: width 0.3s ease;
+    }
+    @include hover {
+      &::after {
+        width: 100%;
+      }
     }
   }
   &__link {
