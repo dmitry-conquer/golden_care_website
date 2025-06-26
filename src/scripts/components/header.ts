@@ -18,8 +18,10 @@ export class Header {
   private overlayElement: HTMLElement | null;
   private triggerButtonElement: HTMLElement | null;
   private toggleElements: HTMLElement[];
+  private scroll: any;
 
-  constructor() {
+  constructor(scroll: any) {
+    this.scroll = scroll;
     this.rootElement = document.querySelector(this.selectors.root);
     this.overlayElement = this.rootElement?.querySelector(this.selectors.overlay) || null;
     this.triggerButtonElement = this.rootElement?.querySelector(this.selectors.triggerButton) || null;
@@ -53,8 +55,12 @@ export class Header {
 
   private setActive(state: boolean): void {
     this.toggleElements.forEach(el => el.classList.toggle(this.stateClasses.isActive, state));
-    document.documentElement.classList.toggle(this.stateClasses.isLock, state);
     this.setAttributes(state);
+    if (this.scroll && state) {
+      this.scroll.stop();
+    } else {
+      this.scroll.start();
+    }
   }
 
   private setAttributes(state: boolean): void {
