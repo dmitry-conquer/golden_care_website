@@ -63,8 +63,11 @@
     font-size: fluid(16, 28);
     font-weight: 700;
     line-height: 1.14;
-    margin-bottom: fluid(8, 16);
     transition: color 0.3s ease;
+    overflow: hidden;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 2;
   }
 
   &__excerpt {
@@ -73,10 +76,15 @@
     -webkit-box-orient: vertical;
     -webkit-line-clamp: 3;
     margin-bottom: auto;
+    margin-top: fluid(8, 16);
     font-size: fluid(15, 20);
   }
 
   &__link {
-    margin-top: rem(40);
+    margin-top: rem(100);
+
+    @include small {
+      margin-top: rem(16);
+    }
   }
 }

@@ -43,6 +43,10 @@
 
 .section {
   padding-block: fluid(40, 90);
+
+  &--mb {
+    margin-bottom: fluid(40, 90);
+  }
 }
 
 .above-footer-title {
