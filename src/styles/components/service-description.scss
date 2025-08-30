@@ -2,8 +2,7 @@
 
 .service-description {
   font-size: fluid(16, 20);
-  &__container {
-  }
+  
   &__header {
     margin-inline: auto;
     display: flex;
@@ -146,8 +145,4 @@
       flex-direction: column;
     }
   }
-}
-.section {
-}
-.container {
 }
