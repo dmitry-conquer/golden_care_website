@@ -63,6 +63,7 @@
     </button>
 
     <div
+      data-lenis-prevent
       id="header-overlay"
       class="header__overlay header-overlay"
       aria-labelledby="menu-toggle"
@@ -74,8 +75,20 @@
           <li class="header-overlay__nav-item">
             <a href="#" class="header-overlay__nav-link">About Us</a>
           </li>
-          <li class="header-overlay__nav-item">
+          <li class="header-overlay__nav-item menu-item-has-children">
             <a href="#" class="header-overlay__nav-link">Our Services</a>
+            <!-- menu-item-has-children -->
+            <ul>
+              <li>
+                <a href="#">Ohio</a>
+              </li>
+              <li>
+                <a href="#">Kentucky</a>
+              </li>
+              <li>
+                <a href="#">Kentucky</a>
+              </li>
+            </ul>
           </li>
           <li class="header-overlay__nav-item">
             <a href="#" class="header-overlay__nav-link">Careers</a>
