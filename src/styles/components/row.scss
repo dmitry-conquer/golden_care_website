@@ -109,6 +109,14 @@
         align-self: center;
       }
     }
+
+    h2 {
+      font-weight: 400;
+
+      strong {
+        font-weight: 700;
+      }
+    }
     ul li {
       list-style-type: disc;
       list-style-position: inside;
