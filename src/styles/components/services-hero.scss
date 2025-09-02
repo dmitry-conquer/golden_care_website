@@ -10,6 +10,11 @@
   }
   &__title {
     text-align: center;
+    font-weight: 400;
+
+    strong {
+      font-weight: 700;
+    }
   }
   &__image {
     margin-top: rem(-90);
