@@ -1,0 +1,148 @@
+@use "../helpers" as *;
+
+.service-description {
+  font-size: fluid(16, 20);
+  
+  &__header {
+    margin-inline: auto;
+    display: flex;
+    flex-direction: column;
+    row-gap: fluid(8, 16);
+    align-items: center;
+    text-align: center;
+    max-width: rem(897);
+    justify-content: center;
+    margin-bottom: fluid(24, 60);
+  }
+  &__title {
+    line-height: 1;
+  }
+  &__text {
+    font-weight: 400;
+    line-height: 1.6;
+    @include small {
+      line-height: 1.37;
+    }
+  }
+  &__body {
+    display: flex;
+    flex-direction: column;
+    row-gap: rem(80);
+    @media (max-width: rem(1024.98)) {
+      row-gap: fluid(24, 80);
+    }
+  }
+  &__row {
+    display: flex;
+    column-gap: rem(60);
+    justify-content: space-between;
+    align-items: start;
+    @media (max-width: rem(1024.98)) {
+      flex-direction: column;
+      row-gap: fluid(16, 32);
+    }
+  }
+  &__row-content {
+    flex: 0 1 rem(724);
+    display: flex;
+    flex-direction: column;
+    row-gap: rem(16);
+    @media (max-width: rem(1024.98)) {
+      flex: 0 1 100%;
+    }
+    @include small {
+      display: contents;
+    }
+  }
+  &__row-title {
+    font-weight: 400;
+    font-size: fluid(20, 40);
+    line-height: 1.12;
+
+    @include small {
+      line-height: 0.9;
+      order: -1;
+    }
+  }
+  &__row-text {
+    line-height: 1.6;
+    max-width: rem(639);
+    @media (max-width: rem(1024.98)) {
+      max-width: 100%;
+    }
+
+    @include small {
+      line-height: 1.37;
+      order: -1;
+    }
+  }
+  &__row-image {
+    width: 100%;
+    height: 100%;
+
+    @media (max-width: rem(1024.98)) {
+      width: 90%;
+      height: auto;
+    }
+
+    @include small {
+      width: 100%;
+    }
+  }
+  &__row-list {
+    padding-top: rem(58); //переглянути це рішення
+    flex: 0 1 rem(639);
+
+    @media (max-width: rem(1024.98)) {
+      flex: 0 1 100%;
+      padding-top: 0; //переглянути це рішення
+    }
+    @include small {
+      order: -1;
+    }
+
+    p {
+      line-height: 1.6;
+      margin-bottom: rem(8);
+      @include small {
+        line-height: 1.37;
+      }
+    }
+
+    li {
+      --liMarkerSize: #{fluid(16, 24)};
+      line-height: 1.6;
+      margin-left: var(--liMarkerSize);
+      padding-left: rem(8);
+      position: relative;
+
+      &:not(:last-child) {
+        margin-bottom: rem(8);
+      }
+
+      &::before {
+        content: "";
+        width: var(--liMarkerSize);
+        height: var(--liMarkerSize);
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-position: center;
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        left: calc(var(--liMarkerSize) * -1);
+        background-image: url('data:image/svg+xml,<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M11.9961 0.150146C12.1077 0.15024 12.1763 0.187073 12.2236 0.250732V0.249756C13.7008 2.28387 16.322 3.13714 18.7148 2.36694V2.36792L18.7275 2.36206C18.7957 2.33312 18.8707 2.33578 18.9688 2.39917C19.0473 2.46136 19.0811 2.53349 19.0811 2.62671C19.0812 5.13879 20.7122 7.37198 23.0977 8.15601H23.0996C23.1984 8.18705 23.2461 8.24024 23.2676 8.32007L23.2695 8.32593C23.3009 8.42698 23.2882 8.50705 23.2383 8.58179C21.7616 10.6159 21.762 13.3697 23.2383 15.4041L23.2393 15.406C23.2858 15.4683 23.3035 15.5472 23.2695 15.6628L23.2686 15.6658C23.2471 15.7456 23.1987 15.7991 23.1006 15.8298L23.0986 15.8308C20.7131 16.6149 19.082 18.8479 19.082 21.3601C19.082 21.4523 19.0475 21.5226 18.9707 21.5837C18.8965 21.6326 18.8367 21.6476 18.7822 21.6394L18.7285 21.6238L18.7148 21.6189C16.3221 20.8486 13.7007 21.7018 12.2236 23.7361C12.1621 23.8149 12.0899 23.8493 11.9961 23.8494C11.9247 23.8494 11.8655 23.8299 11.8145 23.7859L11.7666 23.7341C10.3355 21.7649 7.83169 20.9034 5.50195 21.5515L5.27637 21.6189L5.26367 21.6238C5.19441 21.6533 5.11898 21.6495 5.01855 21.5828C4.94328 21.5221 4.91019 21.4519 4.91016 21.3601C4.91016 18.8477 3.27926 16.6149 0.893555 15.8308L0.891602 15.8298L0.826172 15.8025C0.770499 15.7711 0.739605 15.7264 0.723633 15.6667L0.722656 15.6628L0.706055 15.5828C0.698597 15.5089 0.716934 15.4528 0.751953 15.406L0.753906 15.4041C2.18423 13.4332 2.22902 10.787 0.887695 8.77417L0.753906 8.58179C0.703224 8.50687 0.69016 8.42683 0.72168 8.32593L0.723633 8.32007C0.744773 8.2409 0.792562 8.18732 0.891602 8.15601H0.893555C3.27902 7.37193 4.90903 5.13881 4.90918 2.62671C4.90918 2.53433 4.94265 2.46182 5.01953 2.40015C5.11886 2.33523 5.194 2.3338 5.2627 2.36304L5.27637 2.36694C7.66962 3.13728 10.2915 2.28368 11.7686 0.248779L11.7676 0.247803C11.8159 0.184778 11.8858 0.150146 11.9961 0.150146ZM11.9961 4.12476C10.9307 4.12476 9.91142 4.33252 8.94141 4.74683C7.97351 5.15994 7.13502 5.72041 6.42871 6.42651C5.8106 7.04517 5.30494 7.76343 4.91113 8.58179L4.74902 8.93921C4.33439 9.9093 4.12695 10.9281 4.12695 11.9929C4.12697 13.0581 4.33445 14.0764 4.74902 15.0466C5.11098 15.8938 5.58466 16.642 6.1709 17.2888L6.42871 17.5593C7.13518 18.2666 7.97342 18.8266 8.94141 19.24C9.91178 19.6549 10.9308 19.8611 11.9961 19.8611C13.0613 19.861 14.0796 19.6548 15.0498 19.24C16.0178 18.8268 16.856 18.2666 17.5625 17.5593C18.2692 16.8531 18.8286 16.0149 19.2422 15.0466C19.6565 14.0765 19.8642 13.0582 19.8643 11.9929C19.8643 10.9281 19.6568 9.90903 19.2422 8.93921C18.8286 7.97121 18.2688 7.13364 17.5625 6.42651C16.8559 5.72043 16.0175 5.16023 15.0498 4.74683C14.0797 4.33258 13.0613 4.12481 11.9961 4.12476Z" stroke="%23FFBC02" stroke-width="0.3"/><path d="M11.9949 18.5336C15.6036 18.5336 18.529 15.6082 18.529 11.9996C18.529 8.39095 15.6036 5.46558 11.9949 5.46558C8.38631 5.46558 5.46094 8.39095 5.46094 11.9996C5.46094 15.6082 8.38631 18.5336 11.9949 18.5336Z" fill="%23FFBC02"/></svg>');
+      }
+
+      @include small {
+        line-height: 1.37;
+      }
+    }
+  }
+  &__row--reverse {
+    flex-direction: row-reverse;
+    @media (max-width: rem(1024.98)) {
+      flex-direction: column;
+    }
+  }
+}
